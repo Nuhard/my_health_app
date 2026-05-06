@@ -1,0 +1,70 @@
+{
+  "vegetables": [
+    "carrot",
+    "spinach",
+    "broccoli",
+    "lettuce",
+    "cabbage",
+    "cauliflower",
+    "zucchini",
+    "bell pepper",
+    "cucumber",
+    "tomato"
+  ],
+  "fruits": [
+    "apple",
+    "banana",
+    "orange",
+    "grapes",
+    "mango",
+    "strawberry",
+    "blueberry",
+    "watermelon",
+    "pineapple",
+    "pear"
+  ],
+  "proteins": [
+    "chicken",
+    "fish",
+    "eggs",
+    "tofu",
+    "lentils",
+    "beans",
+    "yogurt",
+    "cheese",
+    "beef",
+    "turkey"
+  ],
+  "carbs": [
+    "rice",
+    "bread",
+    "pasta",
+    "potato",
+    "quinoa",
+    "oats",
+    "noodles",
+    "corn",
+    "couscous",
+    "barley"
+  ],
+  "snacks": [
+    "chips",
+    "cookies",
+    "chocolate",
+    "cake",
+    "ice cream",
+    "popcorn",
+    "donut",
+    "candy"
+  ],
+  "drinks": [
+    "water",
+    "juice",
+    "tea",
+    "coffee",
+    "soda",
+    "milk",
+    "smoothie",
+    "energy drink"
+  ]
+}

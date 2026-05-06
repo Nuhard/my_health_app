@@ -1,0 +1,660 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "last_updated": "2025-01-15",
+    "sources": [
+      "Compendium of Physical Activities (2011 update)",
+      "American College of Sports Medicine (ACSM)",
+      "WHO Physical Activity Guidelines 2020",
+      "National Health Service (NHS) UK Exercise Guidelines"
+    ],
+    "notes": "Calorie calculations use MET (Metabolic Equivalent of Task) values. Formula: Calories/min = (MET × 3.5 × Weight in kg) / 200",
+    "total_activities": 60
+  },
+  "activities": [
+    {
+      "id": "a001",
+      "name": "Running (Jogging)",
+      "category": "Cardio",
+      "emoji": "🏃",
+      "description": "General running or jogging",
+      "met": {
+        "light": 6.0,
+        "moderate": 9.8,
+        "vigorous": 12.3
+      },
+      "speedReference": {
+        "light": "8 km/h (12 min/km)",
+        "moderate": "10 km/h (6 min/km)",
+        "vigorous": "12+ km/h (5 min/km)"
+      },
+      "benefits": ["Cardiovascular health", "Weight loss", "Endurance", "Mental health", "Bone density"],
+      "equipment": "Running shoes",
+      "injury_risk": "moderate"
+    },
+    {
+      "id": "a002",
+      "name": "Walking",
+      "category": "Cardio",
+      "emoji": "🚶",
+      "description": "Walking at various speeds",
+      "met": {
+        "light": 2.5,
+        "moderate": 3.5,
+        "vigorous": 5.0
+      },
+      "speedReference": {
+        "light": "3 km/h (leisurely)",
+        "moderate": "5 km/h (brisk)",
+        "vigorous": "6.5+ km/h (very brisk)"
+      },
+      "benefits": ["Low impact", "Stress relief", "Cardiovascular health", "Accessible", "Joint-friendly"],
+      "equipment": "None",
+      "injury_risk": "low"
+    },
+    {
+      "id": "a003",
+      "name": "Cycling (Stationary)",
+      "category": "Cardio",
+      "emoji": "🚴",
+      "description": "Indoor cycling or spin class",
+      "met": {
+        "light": 3.5,
+        "moderate": 6.8,
+        "vigorous": 10.0
+      },
+      "speedReference": {
+        "light": "50-100 watts",
+        "moderate": "100-150 watts",
+        "vigorous": "150+ watts"
+      },
+      "benefits": ["Leg strength", "Low impact", "Endurance", "Cardiovascular"],
+      "equipment": "Stationary bike",
+      "injury_risk": "low"
+    },
+    {
+      "id": "a004",
+      "name": "Swimming (Laps)",
+      "category": "Cardio",
+      "emoji": "🏊",
+      "description": "Swimming laps freestyle",
+      "met": {
+        "light": 5.8,
+        "moderate": 8.3,
+        "vigorous": 11.0
+      },
+      "speedReference": {
+        "light": "Slow, leisurely",
+        "moderate": "Moderate effort",
+        "vigorous": "Fast, vigorous effort"
+      },
+      "benefits": ["Full body workout", "Low impact", "Flexibility", "Cardiovascular", "Joint-friendly"],
+      "equipment": "Pool access",
+      "injury_risk": "very low"
+    },
+    {
+      "id": "a005",
+      "name": "Weight Training (General)",
+      "category": "Strength",
+      "emoji": "🏋️",
+      "description": "Resistance training with free weights or machines",
+      "met": {
+        "light": 3.0,
+        "moderate": 5.0,
+        "vigorous": 6.0
+      },
+      "speedReference": {
+        "light": "Light weights, slow",
+        "moderate": "Moderate weights",
+        "vigorous": "Heavy weights, circuit"
+      },
+      "benefits": ["Muscle building", "Strength", "Bone density", "Metabolism boost", "Injury prevention"],
+      "equipment": "Dumbbells, barbells, machines",
+      "injury_risk": "moderate"
+    },
+    {
+      "id": "a006",
+      "name": "Yoga (Hatha)",
+      "category": "Flexibility",
+      "emoji": "🧘",
+      "description": "General yoga practice",
+      "met": {
+        "light": 2.0,
+        "moderate": 2.5,
+        "vigorous": 4.0
+      },
+      "speedReference": {
+        "light": "Gentle, restorative",
+        "moderate": "Hatha, basic flow",
+        "vigorous": "Power yoga, Vinyasa"
+      },
+      "benefits": ["Flexibility", "Stress relief", "Balance", "Core strength", "Mental clarity"],
+      "equipment": "Yoga mat",
+      "injury_risk": "low"
+    },
+    {
+      "id": "a007",
+      "name": "HIIT (High-Intensity Interval)",
+      "category": "Cardio",
+      "emoji": "💪",
+      "description": "High-intensity interval training",
+      "met": {
+        "light": 5.0,
+        "moderate": 8.0,
+        "vigorous": 12.0
+      },
+      "speedReference": {
+        "light": "Modified HIIT",
+        "moderate": "Standard intervals",
+        "vigorous": "Maximum effort"
+      },
+      "benefits": ["Fat burning", "Time efficient", "Metabolism boost", "Cardiovascular", "Afterburn effect"],
+      "equipment": "Varies",
+      "injury_risk": "moderate"
+    },
+    {
+      "id": "a008",
+      "name": "Jump Rope",
+      "category": "Cardio",
+      "emoji": "🪢",
+      "description": "Skipping rope",
+      "met": {
+        "light": 8.0,
+        "moderate": 11.0,
+        "vigorous": 12.3
+      },
+      "speedReference": {
+        "light": "Slow pace, breaks",
+        "moderate": "Moderate pace",
+        "vigorous": "Fast pace, double-unders"
+      },
+      "benefits": ["Coordination", "Cardiovascular", "Calorie burn", "Portable", "Bone density"],
+      "equipment": "Jump rope",
+      "injury_risk": "moderate"
+    },
+    {
+      "id": "a009",
+      "name": "Dancing (Aerobic)",
+      "category": "Cardio",
+      "emoji": "💃",
+      "description": "Aerobic dance, Zumba",
+      "met": {
+        "light": 3.0,
+        "moderate": 5.0,
+        "vigorous": 7.3
+      },
+      "speedReference": {
+        "light": "Slow tempo",
+        "moderate": "Moderate tempo",
+        "vigorous": "Fast, continuous"
+      },
+      "benefits": ["Fun", "Coordination", "Cardiovascular", "Social", "Full body"],
+      "equipment": "None",
+      "injury_risk": "low"
+    },
+    {
+      "id": "a010",
+      "name": "Pilates",
+      "category": "Flexibility",
+      "emoji": "🤸",
+      "description": "Mat or reformer Pilates",
+      "met": {
+        "light": 2.5,
+        "moderate": 3.0,
+        "vigorous": 4.5
+      },
+      "speedReference": {
+        "light": "Beginner, slow",
+        "moderate": "Intermediate",
+        "vigorous": "Advanced, reformer"
+      },
+      "benefits": ["Core strength", "Flexibility", "Posture", "Balance", "Injury rehabilitation"],
+      "equipment": "Mat or reformer",
+      "injury_risk": "low"
+    },
+    {
+      "id": "a011",
+      "name": "Basketball (Game)",
+      "category": "Sports",
+      "emoji": "🏀",
+      "description": "Playing basketball",
+      "met": {
+        "light": 4.5,
+        "moderate": 6.5,
+        "vigorous": 8.0
+      },
+      "speedReference": {
+        "light": "Shooting practice",
+        "moderate": "Half-court game",
+        "vigorous": "Full-court game"
+      },
+      "benefits": ["Cardiovascular", "Teamwork", "Agility", "Coordination", "Social"],
+      "equipment": "Basketball and court",
+      "injury_risk": "moderate"
+    },
+    {
+      "id": "a012",
+      "name": "Soccer (Football)",
+      "category": "Sports",
+      "emoji": "⚽",
+      "description": "Playing soccer/football",
+      "met": {
+        "light": 5.0,
+        "moderate": 7.0,
+        "vigorous": 10.0
+      },
+      "speedReference": {
+        "light": "Casual play",
+        "moderate": "Recreational game",
+        "vigorous": "Competitive match"
+      },
+      "benefits": ["Cardiovascular", "Endurance", "Teamwork", "Agility", "Leg strength"],
+      "equipment": "Soccer ball and field",
+      "injury_risk": "moderate"
+    },
+    {
+      "id": "a013",
+      "name": "Tennis (Singles)",
+      "category": "Sports",
+      "emoji": "🎾",
+      "description": "Playing tennis singles",
+      "met": {
+        "light": 5.0,
+        "moderate": 7.3,
+        "vigorous": 8.0
+      },
+      "speedReference": {
+        "light": "Casual rallying",
+        "moderate": "Recreational match",
+        "vigorous": "Competitive match"
+      },
+      "benefits": ["Agility", "Cardiovascular", "Hand-eye coordination", "Social", "Reflexes"],
+      "equipment": "Racket and court",
+      "injury_risk": "moderate"
+    },
+    {
+      "id": "a014",
+      "name": "Boxing (Training)",
+      "category": "Strength",
+      "emoji": "🥊",
+      "description": "Boxing bag work and training",
+      "met": {
+        "light": 5.5,
+        "moderate": 7.8,
+        "vigorous": 12.8
+      },
+      "speedReference": {
+        "light": "Light bag work",
+        "moderate": "Moderate training",
+        "vigorous": "Sparring, intense"
+      },
+      "benefits": ["Full body workout", "Stress relief", "Cardiovascular", "Strength", "Coordination"],
+      "equipment": "Gloves and bag",
+      "injury_risk": "moderate to high"
+    },
+    {
+      "id": "a015",
+      "name": "Rock Climbing (Indoor)",
+      "category": "Strength",
+      "emoji": "🧗",
+      "description": "Indoor rock climbing",
+      "met": {
+        "light": 5.0,
+        "moderate": 8.0,
+        "vigorous": 11.0
+      },
+      "speedReference": {
+        "light": "Beginner walls",
+        "moderate": "Intermediate routes",
+        "vigorous": "Advanced, overhangs"
+      },
+      "benefits": ["Upper body strength", "Problem solving", "Grip strength", "Core", "Mental focus"],
+      "equipment": "Climbing wall, harness",
+      "injury_risk": "moderate"
+    },
+    {
+      "id": "a016",
+      "name": "Rowing Machine",
+      "category": "Cardio",
+      "emoji": "🚣",
+      "description": "Indoor rowing ergometer",
+      "met": {
+        "light": 3.5,
+        "moderate": 7.0,
+        "vigorous": 12.0
+      },
+      "speedReference": {
+        "light": "Slow pace, <100W",
+        "moderate": "Moderate, 100-200W",
+        "vigorous": "Fast, >200W"
+      },
+      "benefits": ["Full body workout", "Low impact", "Cardiovascular", "Strength", "Calorie burn"],
+      "equipment": "Rowing machine",
+      "injury_risk": "low"
+    },
+    {
+      "id": "a017",
+      "name": "Hiking (Hills)",
+      "category": "Cardio",
+      "emoji": "🥾",
+      "description": "Hiking with elevation gain",
+      "met": {
+        "light": 4.0,
+        "moderate": 6.5,
+        "vigorous": 9.0
+      },
+      "speedReference": {
+        "light": "Flat terrain, <10 lbs",
+        "moderate": "Hills, 10-20 lbs pack",
+        "vigorous": "Steep, >20 lbs pack"
+      },
+      "benefits": ["Nature connection", "Leg strength", "Cardiovascular", "Mental health", "Vitamin D"],
+      "equipment": "Hiking boots, backpack",
+      "injury_risk": "moderate"
+    },
+    {
+      "id": "a018",
+      "name": "Elliptical Trainer",
+      "category": "Cardio",
+      "emoji": "🏃",
+      "description": "Elliptical machine workout",
+      "met": {
+        "light": 4.0,
+        "moderate": 5.0,
+        "vigorous": 8.0
+      },
+      "speedReference": {
+        "light": "Slow pace, low resistance",
+        "moderate": "Moderate pace",
+        "vigorous": "Fast, high resistance"
+      },
+      "benefits": ["Low impact", "Full body", "Cardiovascular", "Joint-friendly", "Accessible"],
+      "equipment": "Elliptical machine",
+      "injury_risk": "very low"
+    },
+    {
+      "id": "a019",
+      "name": "Stretching (General)",
+      "category": "Flexibility",
+      "emoji": "🤸",
+      "description": "Static and dynamic stretching",
+      "met": {
+        "light": 2.3,
+        "moderate": 2.8,
+        "vigorous": 3.8
+      },
+      "speedReference": {
+        "light": "Gentle, static",
+        "moderate": "Active stretching",
+        "vigorous": "Dynamic, athletic"
+      },
+      "benefits": ["Flexibility", "Injury prevention", "Relaxation", "Recovery", "Range of motion"],
+      "equipment": "None",
+      "injury_risk": "very low"
+    },
+    {
+      "id": "a020",
+      "name": "Stair Climbing",
+      "category": "Cardio",
+      "emoji": "🪜",
+      "description": "Climbing stairs or stair machine",
+      "met": {
+        "light": 4.0,
+        "moderate": 8.8,
+        "vigorous": 15.0
+      },
+      "speedReference": {
+        "light": "Slow pace",
+        "moderate": "Moderate pace",
+        "vigorous": "Fast, running stairs"
+      },
+      "benefits": ["Leg strength", "Cardiovascular", "Calorie burn", "Accessible", "Functional fitness"],
+      "equipment": "Stairs or machine",
+      "injury_risk": "low"
+    },
+    {
+      "id": "a021",
+      "name": "Kickboxing",
+      "category": "Cardio",
+      "emoji": "🥋",
+      "description": "Kickboxing class or training",
+      "met": {
+        "light": 5.0,
+        "moderate": 7.0,
+        "vigorous": 10.0
+      },
+      "speedReference": {
+        "light": "Light technique",
+        "moderate": "Moderate intensity",
+        "vigorous": "High intensity"
+      },
+      "benefits": ["Full body workout", "Cardiovascular", "Strength", "Stress relief", "Coordination"],
+      "equipment": "None or gloves",
+      "injury_risk": "moderate"
+    },
+    {
+      "id": "a022",
+      "name": "CrossFit",
+      "category": "Strength",
+      "emoji": "🏋️",
+      "description": "CrossFit WOD (Workout of the Day)",
+      "met": {
+        "light": 5.0,
+        "moderate": 9.0,
+        "vigorous": 12.0
+      },
+      "speedReference": {
+        "light": "Scaled movements",
+        "moderate": "Rx movements",
+        "vigorous": "Competition pace"
+      },
+      "benefits": ["Full body strength", "Functional fitness", "Community", "Varied workouts", "Mental toughness"],
+      "equipment": "Various gym equipment",
+      "injury_risk": "moderate to high"
+    },
+    {
+      "id": "a023",
+      "name": "Golf (Walking)",
+      "category": "Sports",
+      "emoji": "⛳",
+      "description": "Walking 18 holes, carrying clubs",
+      "met": {
+        "light": 3.0,
+        "moderate": 4.3,
+        "vigorous": 5.5
+      },
+      "speedReference": {
+        "light": "Cart riding",
+        "moderate": "Walking, pulling cart",
+        "vigorous": "Walking, carrying bag"
+      },
+      "benefits": ["Walking", "Outdoor activity", "Social", "Focus", "Low impact"],
+      "equipment": "Golf clubs and course",
+      "injury_risk": "low"
+    },
+    {
+      "id": "a024",
+      "name": "Martial Arts (Karate/Taekwondo)",
+      "category": "Sports",
+      "emoji": "🥋",
+      "description": "Martial arts training",
+      "met": {
+        "light": 4.0,
+        "moderate": 6.8,
+        "vigorous": 10.0
+      },
+      "speedReference": {
+        "light": "Technique practice",
+        "moderate": "Training class",
+        "vigorous": "Sparring"
+      },
+      "benefits": ["Discipline", "Strength", "Flexibility", "Self-defense", "Mental focus"],
+      "equipment": "Gi or uniform",
+      "injury_risk": "moderate"
+    },
+    {
+      "id": "a025",
+      "name": "Badminton",
+      "category": "Sports",
+      "emoji": "🏸",
+      "description": "Playing badminton",
+      "met": {
+        "light": 4.0,
+        "moderate": 5.5,
+        "vigorous": 7.0
+      },
+      "speedReference": {
+        "light": "Casual play",
+        "moderate": "Recreational",
+        "vigorous": "Competitive"
+      },
+      "benefits": ["Agility", "Cardiovascular", "Hand-eye coordination", "Social", "Reflexes"],
+      "equipment": "Racket and shuttlecock",
+      "injury_risk": "low"
+    },
+    {
+      "id": "a026",
+      "name": "Volleyball",
+      "category": "Sports",
+      "emoji": "🏐",
+      "description": "Beach or indoor volleyball",
+      "met": {
+        "light": 3.0,
+        "moderate": 4.0,
+        "vigorous": 8.0
+      },
+      "speedReference": {
+        "light": "Recreational",
+        "moderate": "Casual game",
+        "vigorous": "Competitive"
+      },
+      "benefits": ["Teamwork", "Jumping power", "Agility", "Social", "Hand-eye coordination"],
+      "equipment": "Volleyball and net",
+      "injury_risk": "moderate"
+    },
+    {
+      "id": "a027",
+      "name": "Calisthenics (Bodyweight)",
+      "category": "Strength",
+      "emoji": "💪",
+      "description": "Push-ups, pull-ups, squats, etc.",
+      "met": {
+        "light": 3.5,
+        "moderate": 5.0,
+        "vigorous": 8.0
+      },
+      "speedReference": {
+        "light": "Slow, basic",
+        "moderate": "Moderate pace",
+        "vigorous": "Circuit, advanced"
+      },
+      "benefits": ["No equipment needed", "Functional strength", "Flexibility", "Accessible", "Portable workout"],
+      "equipment": "None",
+      "injury_risk": "low"
+    },
+    {
+      "id": "a028",
+      "name": "Skateboarding",
+      "category": "Sports",
+      "emoji": "🛹",
+      "description": "Skateboarding or longboarding",
+      "met": {
+        "light": 3.0,
+        "moderate": 5.0,
+        "vigorous": 6.0
+      },
+      "speedReference": {
+        "light": "Cruising",
+        "moderate": "Moderate tricks",
+        "vigorous": "Intense skating"
+      },
+      "benefits": ["Balance", "Coordination", "Fun", "Outdoor activity", "Core strength"],
+      "equipment": "Skateboard",
+      "injury_risk": "moderate to high"
+    },
+    {
+      "id": "a029",
+      "name": "Gardening (Moderate)",
+      "category": "Daily Activity",
+      "emoji": "🌱",
+      "description": "Digging, raking, planting",
+      "met": {
+        "light": 2.5,
+        "moderate": 4.0,
+        "vigorous": 5.0
+      },
+      "speedReference": {
+        "light": "Light weeding",
+        "moderate": "Digging, planting",
+        "vigorous": "Heavy digging, hauling"
+      },
+      "benefits": ["Outdoor activity", "Stress relief", "Productive", "Flexibility", "Vitamin D"],
+      "equipment": "Gardening tools",
+      "injury_risk": "low"
+    },
+    {
+      "id": "a030",
+      "name": "Household Cleaning",
+      "category": "Daily Activity",
+      "emoji": "🧹",
+      "description": "Vacuuming, mopping, general cleaning",
+      "met": {
+        "light": 2.3,
+        "moderate": 3.3,
+        "vigorous": 4.0
+      },
+      "speedReference": {
+        "light": "Light dusting",
+        "moderate": "Vacuuming, mopping",
+        "vigorous": "Heavy scrubbing, moving furniture"
+      },
+      "benefits": ["Productive", "Light exercise", "Daily movement", "Accessible", "Functional fitness"],
+      "equipment": "Cleaning supplies",
+      "injury_risk": "very low"
+    }
+  ],
+  "intensityGuide": {
+    "light": {
+      "description": "Can talk comfortably, breathing slightly elevated",
+      "heartRatePercent": "50-63% of max HR",
+      "perceivedExertion": "3-4 out of 10"
+    },
+    "moderate": {
+      "description": "Can talk but breathing is noticeably harder",
+      "heartRatePercent": "64-76% of max HR",
+      "perceivedExertion": "5-6 out of 10"
+    },
+    "vigorous": {
+      "description": "Difficult to talk, breathing hard",
+      "heartRatePercent": "77-93% of max HR",
+      "perceivedExertion": "7-8 out of 10"
+    }
+  },
+  "categories": [
+    {
+      "name": "Cardio",
+      "description": "Aerobic exercises that increase heart rate and improve cardiovascular health",
+      "icon": "❤️"
+    },
+    {
+      "name": "Strength",
+      "description": "Resistance exercises that build muscle and increase strength",
+      "icon": "💪"
+    },
+    {
+      "name": "Flexibility",
+      "description": "Stretching and mobility exercises that improve range of motion",
+      "icon": "🤸"
+    },
+    {
+      "name": "Sports",
+      "description": "Competitive and recreational sports activities",
+      "icon": "⚽"
+    },
+    {
+      "name": "Daily Activity",
+      "description": "Everyday physical activities that contribute to overall movement",
+      "icon": "🚶"
+    }
+  ]
+}

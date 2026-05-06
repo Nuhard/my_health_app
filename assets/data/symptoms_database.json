@@ -1,0 +1,3919 @@
+{
+  "database_info": {
+    "title": "Master's Level Comprehensive Symptoms Database",
+    "version": "1.0",
+    "total_symptoms": 60,
+    "last_updated": "2025-11-10",
+    "coding_system": "ICD-10-CM",
+    "compliance": ["WHO ICD-10", "CDC Guidelines", "Clinical Practice Standards"],
+    "purpose": "Academic medical reference for symptom assessment and treatment guidance"
+  },
+  "symptoms": [
+    {
+      "id": 1,
+      "symptom_name": "Fever",
+      "icd10_code": "R50.9",
+      "category": "Constitutional",
+      "description": "Elevated body temperature above normal range (>37.5°C/99.5°F)",
+      "severity_classification": {
+        "mild": {
+          "description": "Low-grade fever 37.5-38.3°C (99.5-101°F)",
+          "characteristics": "Minimal discomfort, able to function normally"
+        },
+        "moderate": {
+          "description": "Moderate fever 38.3-39.4°C (101-103°F)",
+          "characteristics": "Notable discomfort, some activity limitation, malaise"
+        },
+        "severe": {
+          "description": "High fever >39.4°C (>103°F)",
+          "characteristics": "Significant impairment, risk of complications, severe discomfort"
+        }
+      },
+      "common_causes": [
+        "Viral infections (influenza, common cold, COVID-19)",
+        "Bacterial infections (UTI, pneumonia, strep throat)",
+        "Inflammatory conditions",
+        "Heat exhaustion",
+        "Medication reactions",
+        "Immunizations"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Rest adequately - 8-10 hours of sleep",
+          "Increase fluid intake to 2-3 liters/day (water, clear broths, electrolyte solutions)",
+          "Apply cool compress to forehead, neck, and wrists",
+          "Wear light, breathable clothing",
+          "Maintain room temperature at 20-22°C (68-72°F)",
+          "Lukewarm bath (not cold) if fever very high",
+          "Avoid bundling up - allows heat dissipation"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Acetaminophen (Paracetamol/Tylenol)",
+            "dosage": "Adults: 500-1000mg every 4-6 hours (maximum 4000mg/24hrs)",
+            "pediatric_dosage": "10-15mg/kg every 4-6 hours",
+            "notes": "First-line antipyretic, hepatotoxic in overdose, safe for most patients",
+            "contraindications": "Liver disease, alcohol use disorder"
+          },
+          {
+            "medication": "Ibuprofen (Advil/Motrin)",
+            "dosage": "Adults: 200-400mg every 4-6 hours (maximum 1200mg/24hrs OTC)",
+            "pediatric_dosage": "5-10mg/kg every 6-8 hours",
+            "notes": "NSAID with anti-inflammatory properties, take with food",
+            "contraindications": "Peptic ulcer, kidney disease, pregnancy (3rd trimester), bleeding disorders"
+          },
+          {
+            "medication": "Aspirin",
+            "dosage": "Adults: 325-650mg every 4-6 hours",
+            "notes": "Effective antipyretic, NOT for children <16 due to Reye's syndrome risk",
+            "contraindications": "Children, bleeding disorders, recent surgery"
+          }
+        ]
+      },
+      "red_flags": [
+        "Temperature >40°C (104°F)",
+        "Fever persisting >3 days without improvement",
+        "Severe headache with neck stiffness (meningitis concern)",
+        "Difficulty breathing or chest pain",
+        "Altered mental status, confusion, or lethargy",
+        "Seizures or convulsions",
+        "Persistent vomiting or inability to keep fluids down",
+        "Petechial rash (non-blanching purple spots)",
+        "Severe abdominal pain",
+        "Immunocompromised patients",
+        "Recent travel to malaria-endemic areas",
+        "Infants <3 months with any fever"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Seizures",
+          "Severe difficulty breathing",
+          "Altered mental status or unresponsiveness",
+          "Temperature >40.5°C (105°F)",
+          "Signs of meningitis (stiff neck, severe headache, photophobia, rash)"
+        ],
+        "urgent_care_same_day": [
+          "Fever >39.4°C (103°F) not responding to medication",
+          "Fever >3 days duration",
+          "Severe headache or body aches",
+          "Persistent vomiting or diarrhea",
+          "Signs of dehydration",
+          "Any fever in infant <3 months"
+        ],
+        "primary_care_24_48hrs": [
+          "Low-grade persistent fever",
+          "Fever with mild symptoms",
+          "Recurrent fevers",
+          "Fever with localized symptoms (ear pain, sore throat)"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Fever is a symptom, not a disease - it indicates body's immune response",
+          "Goal is patient comfort, not necessarily achieving normal temperature",
+          "Alternating acetaminophen and ibuprofen not routinely recommended",
+          "Monitor hydration status - urine should be pale yellow",
+          "Keep temperature log if fever persists",
+          "Fever in children is common and usually benign if child is well-appearing"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "symptom_name": "Cough",
+      "icd10_code": "R05",
+      "category": "Respiratory",
+      "description": "Sudden, forceful expulsion of air from lungs",
+      "severity_classification": {
+        "mild": {
+          "description": "Occasional dry cough",
+          "characteristics": "No interference with sleep or daily activities, no sputum production"
+        },
+        "moderate": {
+          "description": "Frequent productive or dry cough",
+          "characteristics": "Affects sleep quality, some activity limitation, may have sputum"
+        },
+        "severe": {
+          "description": "Persistent severe cough",
+          "characteristics": "Significant sleep disruption, breathlessness, hemoptysis, chest pain"
+        }
+      },
+      "cough_types": {
+        "dry_cough": "Non-productive, irritating, often viral or allergic",
+        "productive_cough": "With phlegm/sputum, indicates airway secretions",
+        "acute_cough": "Duration <3 weeks, usually infectious",
+        "chronic_cough": "Duration >8 weeks, needs evaluation"
+      },
+      "common_causes": [
+        "Upper respiratory tract infection (common cold)",
+        "Acute bronchitis",
+        "Pneumonia",
+        "Asthma",
+        "Allergic rhinitis",
+        "Gastroesophageal reflux disease (GERD)",
+        "Post-nasal drip",
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Medications (ACE inhibitors)",
+        "COVID-19"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Honey: 1-2 teaspoons before bed (proven effective for cough suppression) - NOT for infants <1 year",
+          "Hydration: Warm liquids (tea, broth) help thin secretions",
+          "Humidifier: Add moisture to air, especially during sleep",
+          "Steam inhalation: 10-15 minutes, 2-3 times daily",
+          "Elevate head while sleeping (30-45 degrees)",
+          "Avoid irritants: smoke, strong perfumes, cold air",
+          "Throat lozenges or hard candy (for adults)",
+          "Ginger tea with honey",
+          "Saltwater gargle for throat irritation"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Dextromethorphan (Robitussin DM, Delsym)",
+            "dosage": "Adults: 10-20mg every 4 hours or 60mg extended-release every 12 hours (max 120mg/day)",
+            "mechanism": "Cough suppressant - acts on cough center in brain",
+            "best_for": "Dry, non-productive cough interfering with sleep",
+            "notes": "May cause drowsiness, do not use with MAOIs",
+            "contraindications": "MAOI use, chronic cough, productive cough with excessive secretions"
+          },
+          {
+            "medication": "Guaifenesin (Mucinex, Robitussin)",
+            "dosage": "Adults: 200-400mg every 4 hours or 600-1200mg extended-release every 12 hours",
+            "mechanism": "Expectorant - helps thin and loosen mucus",
+            "best_for": "Productive cough with thick secretions",
+            "notes": "Must drink plenty of water for effectiveness",
+            "contraindications": "Few, generally well-tolerated"
+          },
+          {
+            "medication": "Diphenhydramine (Benadryl)",
+            "dosage": "Adults: 25-50mg at bedtime",
+            "mechanism": "Antihistamine with cough suppressant properties",
+            "best_for": "Nighttime cough from post-nasal drip or allergies",
+            "notes": "Causes significant drowsiness - bedtime use only",
+            "contraindications": "Elderly (fall risk), prostate enlargement, glaucoma"
+          },
+          {
+            "medication": "Menthol/Eucalyptus lozenges",
+            "dosage": "As needed throughout day",
+            "mechanism": "Local soothing effect on throat",
+            "best_for": "Throat irritation, minor cough",
+            "notes": "Provides symptomatic relief only"
+          }
+        ]
+      },
+      "red_flags": [
+        "Hemoptysis (coughing up blood) - any amount",
+        "Severe dyspnea (shortness of breath)",
+        "High fever (>39°C/102°F) with cough",
+        "Chest pain with coughing",
+        "Cough persisting >3 weeks (acute) or >8 weeks (chronic)",
+        "Wheezing or stridor",
+        "Cyanosis (blue lips or fingernails)",
+        "Significant weight loss with chronic cough",
+        "Night sweats with chronic cough",
+        "Barking cough in children (croup)",
+        "Whooping sound after cough (pertussis)",
+        "Infant <3 months with cough"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Coughing up large amounts of blood",
+          "Severe difficulty breathing or choking",
+          "Blue discoloration of lips/face",
+          "Loss of consciousness",
+          "Stridor (high-pitched breathing sound)"
+        ],
+        "urgent_care_same_day": [
+          "Any hemoptysis",
+          "High fever with productive cough",
+          "Chest pain with cough",
+          "Severe wheezing",
+          "Signs of pneumonia (fever, shortness of breath, chest pain)"
+        ],
+        "primary_care_1_week": [
+          "Cough >3 weeks duration",
+          "Productive cough with green/yellow sputum",
+          "Cough interfering significantly with sleep or daily activities",
+          "Concerning associated symptoms"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Cough is protective reflex to clear airways",
+          "Antibiotics do NOT help viral coughs (most common cause)",
+          "Honey more effective than OTC cough medicines for children >1 year",
+          "Cough can persist 3-8 weeks after viral infection (post-viral cough)",
+          "Smoking cessation crucial for chronic cough",
+          "Stay hydrated to help thin secretions"
+        ],
+        "prevention": [
+          "Hand hygiene",
+          "Avoid close contact with sick individuals",
+          "Annual influenza vaccination",
+          "Avoid smoking and secondhand smoke"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "symptom_name": "Headache",
+      "icd10_code": "R51",
+      "category": "Neurological",
+      "description": "Pain or discomfort in head, scalp, or neck region",
+      "severity_classification": {
+        "mild": {
+          "description": "Pain scale 1-3/10",
+          "characteristics": "Dull ache, doesn't interfere with activities, responsive to OTC medication"
+        },
+        "moderate": {
+          "description": "Pain scale 4-6/10",
+          "characteristics": "Noticeable impairment, difficulty concentrating, some activity limitation"
+        },
+        "severe": {
+          "description": "Pain scale 7-10/10",
+          "characteristics": "Debilitating, unable to function, may have nausea/vomiting, light/sound sensitivity"
+        }
+      },
+      "headache_types": {
+        "tension_type": "Most common, band-like pressure, bilateral, stress-related",
+        "migraine": "Unilateral, throbbing, with nausea, photophobia, aura possible",
+        "cluster": "Severe unilateral orbital pain, lacrimation, rhinorrhea, rare",
+        "sinus": "Facial pressure, worse with bending, associated with sinus congestion",
+        "medication_overuse": "From excessive analgesic use (>15 days/month)",
+        "secondary": "Due to underlying condition (infection, trauma, etc.)"
+      },
+      "common_causes": [
+        "Tension-type headache (stress, poor posture)",
+        "Migraine",
+        "Dehydration",
+        "Sinusitis",
+        "Eye strain",
+        "Caffeine withdrawal",
+        "Poor sleep",
+        "Hunger/hypoglycemia",
+        "Hypertension",
+        "Medication side effects"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Rest in quiet, dark room",
+          "Apply cold compress to forehead or ice pack to neck (15-20 min)",
+          "Apply warm compress to tense neck muscles",
+          "Gentle massage of temples, neck, and shoulders",
+          "Stay well-hydrated - drink water regularly",
+          "Regular sleep schedule (7-9 hours)",
+          "Stress reduction: meditation, deep breathing, yoga",
+          "Limit screen time - follow 20-20-20 rule (every 20 min, look 20 feet away for 20 sec)",
+          "Maintain good posture, especially at desk",
+          "Regular meals to prevent hypoglycemia",
+          "Peppermint or lavender essential oil to temples",
+          "Caffeine in small amounts (if not overused) can help some headaches"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Acetaminophen (Tylenol)",
+            "dosage": "Adults: 500-1000mg every 4-6 hours (max 4000mg/24hrs)",
+            "efficacy": "Effective for mild-moderate tension headaches",
+            "onset": "30-60 minutes",
+            "notes": "First-line for frequent headaches (lower risk of rebound)",
+            "contraindications": "Liver disease, alcohol use"
+          },
+          {
+            "medication": "Ibuprofen (Advil, Motrin)",
+            "dosage": "Adults: 400-600mg every 6-8 hours (max 1200mg/24hrs OTC)",
+            "efficacy": "Very effective for tension headaches and migraines",
+            "onset": "30-45 minutes",
+            "notes": "Take with food, more effective than acetaminophen for inflammation",
+            "contraindications": "GI ulcers, kidney disease, bleeding disorders"
+          },
+          {
+            "medication": "Aspirin",
+            "dosage": "Adults: 500-1000mg every 4-6 hours (max 4000mg/24hrs)",
+            "efficacy": "Effective for various headache types",
+            "notes": "Can be combined with caffeine (Excedrin) for migraine",
+            "contraindications": "Bleeding disorders, children <16 years"
+          },
+          {
+            "medication": "Excedrin (Aspirin + Acetaminophen + Caffeine)",
+            "dosage": "2 tablets every 6 hours (max 8 tablets/24hrs)",
+            "efficacy": "Particularly effective for migraines",
+            "notes": "Caffeine enhances analgesic effect, but can cause dependence",
+            "contraindications": "Sensitivity to caffeine, anxiety disorders"
+          },
+          {
+            "medication": "Naproxen sodium (Aleve)",
+            "dosage": "Adults: 220-440mg initially, then 220mg every 8-12 hours",
+            "efficacy": "Long-acting, good for prolonged headaches",
+            "notes": "Longer duration than ibuprofen",
+            "contraindications": "Similar to ibuprofen"
+          }
+        ]
+      },
+      "red_flags": [
+        "Sudden severe 'thunderclap' headache (worst headache of life)",
+        "Headache with fever, stiff neck, and rash (meningitis)",
+        "Headache after head trauma",
+        "Progressive worsening over days to weeks",
+        "New headache in person >50 years old",
+        "Headache with neurological symptoms: weakness, numbness, vision changes, speech difficulty",
+        "Headache with confusion or altered consciousness",
+        "Headache that changes with position (worse lying down)",
+        "Headache with jaw claudication or vision loss (temporal arteritis in elderly)",
+        "First severe headache in person with cancer or HIV",
+        "Headache waking patient from sleep",
+        "Pregnancy with severe headache (preeclampsia concern)"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Thunderclap headache (sudden, severe, peak within seconds)",
+          "Headache with loss of consciousness",
+          "Headache with paralysis, weakness, or numbness",
+          "Headache with severe confusion or difficulty speaking",
+          "Headache after significant head trauma",
+          "Headache with seizure"
+        ],
+        "urgent_care_same_day": [
+          "Severe headache not responding to usual treatment",
+          "Headache with high fever and stiff neck",
+          "Sudden onset severe headache (even if improving)",
+          "Headache with persistent vomiting",
+          "Headache with visual changes"
+        ],
+        "primary_care_1_2_weeks": [
+          "Frequent headaches (>2 per week)",
+          "New pattern of headaches",
+          "Headaches requiring increasing medication",
+          "Chronic daily headache",
+          "Medication overuse headache (>15 days/month analgesic use)"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Keep headache diary: track frequency, severity, triggers, medications used",
+          "Identify and avoid triggers: stress, certain foods, sleep deprivation",
+          "Regular lifestyle: consistent sleep, meals, exercise",
+          "Limit caffeine intake and avoid abrupt cessation",
+          "Beware medication overuse: using pain medication >2-3 days/week can cause rebound headaches",
+          "Proper ergonomics at work and home",
+          "Stay hydrated throughout day"
+        ],
+        "migraine_specific": [
+          "Common triggers: aged cheese, chocolate, alcohol, processed meats, MSG",
+          "Treat early for best results",
+          "Dark, quiet room during attack",
+          "Consider preventive medication if >4 attacks/month"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "symptom_name": "Nausea and Vomiting",
+      "icd10_code": "R11.2",
+      "category": "Gastrointestinal",
+      "description": "Nausea: unpleasant sensation of need to vomit. Vomiting: forceful expulsion of gastric contents",
+      "severity_classification": {
+        "mild": {
+          "description": "Intermittent nausea, 1-2 vomiting episodes",
+          "characteristics": "Able to keep some fluids down, minimal dehydration risk"
+        },
+        "moderate": {
+          "description": "Persistent nausea, 3-5 vomiting episodes",
+          "characteristics": "Difficulty keeping fluids down, early dehydration signs"
+        },
+        "severe": {
+          "description": "Intractable vomiting, >6 episodes or continuous",
+          "characteristics": "Unable to keep anything down, significant dehydration, hematemesis"
+        }
+      },
+      "common_causes": [
+        "Viral gastroenteritis (stomach flu)",
+        "Food poisoning",
+        "Motion sickness",
+        "Pregnancy (morning sickness)",
+        "Medication side effects",
+        "Migraine",
+        "Appendicitis",
+        "Bowel obstruction",
+        "Gastritis/peptic ulcer",
+        "Chemotherapy",
+        "Anxiety/stress",
+        "Vestibular disorders"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Initial management: Nothing by mouth for 1-2 hours after vomiting",
+          "Gradual rehydration: Small sips (1-2 teaspoons) every 5-10 minutes",
+          "Clear liquids: water, ice chips, clear broth, diluted apple juice, oral rehydration solution",
+          "Ginger: Fresh ginger tea, ginger ale (real ginger), ginger candies - proven antiemetic",
+          "Peppermint: Tea or aromatherapy (smell peppermint oil)",
+          "BRAT diet: Bananas, Rice, Applesauce, Toast - once tolerating fluids",
+          "Acupressure: P6 point on wrist (3 finger-widths below wrist crease)",
+          "Fresh air and cool environment",
+          "Avoid strong odors, greasy/spicy/fatty foods",
+          "Rest in comfortable position (left side may help)",
+          "Cold compress on forehead or back of neck",
+          "Frequent small meals once improving"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Bismuth subsalicylate (Pepto-Bismol)",
+            "dosage": "Adults: 524mg (2 tablets) every 30-60 minutes as needed (max 8 doses/24hrs)",
+            "mechanism": "Coats stomach lining, mild antibacterial",
+            "best_for": "Nausea, upset stomach, diarrhea, food poisoning",
+            "notes": "Can darken tongue and stool (black) - normal. Contains aspirin-like compound",
+            "contraindications": "Aspirin allergy, children with viral illness (Reye's syndrome risk), bleeding disorders"
+          },
+          {
+            "medication": "Dimenhydrinate (Dramamine)",
+            "dosage": "Adults: 50-100mg every 4-6 hours (max 400mg/24hrs)",
+            "mechanism": "Antihistamine, anticholinergic",
+            "best_for": "Motion sickness, vertigo-associated nausea",
+            "notes": "Take 30-60 minutes before travel. Causes drowsiness",
+            "contraindications": "Glaucoma, prostate enlargement, elderly (fall risk)"
+          },
+          {
+            "medication": "Meclizine (Bonine, Dramamine Less Drowsy)",
+            "dosage": "Adults: 25-50mg once daily",
+            "mechanism": "Antihistamine with less sedation",
+            "best_for": "Motion sickness, vertigo",
+            "notes": "Take 1 hour before travel, longer acting than dimenhydrinate",
+            "contraindications": "Similar to dimenhydrinate"
+          },
+          {
+            "medication": "Emetrol (phosphorated carbohydrate solution)",
+            "dosage": "Adults: 15-30mL, repeat every 15 min until distress subsides (max 5 doses/hour)",
+            "mechanism": "Reduces smooth muscle contraction in GI tract",
+            "best_for": "Nausea from upset stomach",
+            "notes": "High sugar content - use caution in diabetes",
+            "contraindications": "Diabetes, hereditary fructose intolerance"
+          },
+          {
+            "medication": "Oral rehydration solution (Pedialyte, Hydralyte)",
+            "dosage": "Frequent small sips throughout day",
+            "mechanism": "Replaces fluids and electrolytes",
+            "best_for": "Preventing/treating dehydration from vomiting",
+            "notes": "Essential component of treatment, especially with diarrhea",
+            "contraindications": "None - safe for all ages"
+          }
+        ]
+      },
+      "red_flags": [
+        "Hematemesis: vomiting blood (red or coffee-ground appearance)",
+        "Severe abdominal pain, especially right lower quadrant",
+        "Signs of dehydration: dizziness, dark urine, dry mucous membranes, decreased urination",
+        "High fever (>38.9°C/102°F)",
+        "Severe headache with vomiting",
+        "Projectile vomiting in infants",
+        "Vomiting after head injury",
+        "Green/yellow bile vomiting (bilious vomiting)",
+        "Unable to keep any fluids down for >24 hours (adults) or >12 hours (children)",
+        "Severe dehydration signs: lethargy, sunken eyes, no tears, no urine >8 hours",
+        "Pregnancy with severe vomiting (hyperemesis gravidarum)",
+        "Vomiting with chest pain",
+        "Altered mental status"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Vomiting blood (any amount)",
+          "Severe abdominal pain with rigid abdomen",
+          "Signs of severe dehydration with altered consciousness",
+          "Vomiting with severe chest pain",
+          "Head injury followed by vomiting",
+          "Suspected poisoning or overdose"
+        ],
+        "urgent_care_same_day": [
+          "Unable to keep fluids down >24 hours",
+          "Signs of moderate dehydration",
+          "High fever with vomiting",
+          "Severe persistent vomiting",
+          "Green bilious vomit",
+          "Pregnancy with severe vomiting",
+          "Infant or elderly with persistent vomiting"
+        ],
+        "primary_care_24_48hrs": [
+          "Persistent nausea affecting quality of life",
+          "Recurrent episodes of vomiting",
+          "Vomiting with medication use",
+          "Unexplained chronic nausea"
+        ]
+      },
+      "dehydration_assessment": {
+        "mild": "Thirsty, dry lips, decreased urine (darker color)",
+        "moderate": "Very thirsty, dry mouth, minimal urine, dizziness when standing, fatigue",
+        "severe": "Extremely thirsty or not thirsty, no urine output, sunken eyes, rapid heartbeat, lethargy, confusion"
+      },
+      "patient_education": {
+        "key_points": [
+          "Dehydration is main concern with vomiting - focus on fluid replacement",
+          "Reintroduce foods gradually - don't rush",
+          "Viral gastroenteritis is self-limited (usually 24-72 hours)",
+          "Hand hygiene crucial to prevent spread",
+          "Antiemetics not always necessary - may prolong viral illness",
+          "Monitor urine output and color as hydration indicator"
+        ],
+        "when_rehydrating": [
+          "Start with 1-2 teaspoons every 5-10 minutes",
+          "Gradually increase volume as tolerated",
+          "Popsicles and ice chips count as fluids",
+          "Oral rehydration solution better than plain water (contains electrolytes)",
+          "Avoid milk, juice, soda initially"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "symptom_name": "Diarrhea",
+      "icd10_code": "R19.7",
+      "category": "Gastrointestinal",
+      "description": "Loose, watery stools occurring more frequently than normal (>3 per day)",
+      "severity_classification": {
+        "mild": {
+          "description": "3-4 loose stools per day",
+          "characteristics": "Minimal cramping, no blood, able to maintain hydration"
+        },
+        "moderate": {
+          "description": "5-7 loose watery stools per day",
+          "characteristics": "Moderate cramping, some dehydration risk, interferes with activities"
+        },
+        "severe": {
+          "description": ">8 watery stools per day",
+          "characteristics": "Severe cramping, blood/mucus present, significant dehydration risk, fever"
+        }
+      },
+      "duration_classification": {
+        "acute": "<14 days - usually infectious",
+        "persistent": "14-30 days",
+        "chronic": ">30 days - needs medical evaluation"
+      },
+      "common_causes": [
+        "Viral gastroenteritis (most common)",
+        "Bacterial infection (E. coli, Salmonella, Campylobacter)",
+        "Food poisoning",
+        "Parasitic infection (Giardia)",
+        "Antibiotic-associated diarrhea (C. difficile)",
+        "Food intolerances (lactose, gluten)",
+        "Inflammatory bowel disease (Crohn's, UC)",
+        "Irritable bowel syndrome (IBS)",
+        "Medications",
+        "Artificial sweeteners (sorbitol)",
+        "Stress/anxiety"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Oral rehydration: Most important - drink 2-3 liters/day minimum",
+          "Oral rehydration solution (ORS): Pedialyte, Hydralyte - ideal for electrolyte replacement",
+          "BRAT diet: Bananas, Rice, Applesauce, Toast - easy to digest, binding",
+          "Additional foods: Plain crackers, boiled potatoes, chicken (no skin), clear broth",
+          "Probiotics: Yogurt with live cultures, kefir, or probiotic supplements",
+          "Avoid: Dairy (if lactose intolerant), fatty/greasy foods, spicy foods, caffeine, alcohol",
+          "Chamomile or peppermint tea: Soothing to GI tract",
+          "Rest and let body recover",
+          "Maintain hygiene: Frequent handwashing to prevent spread",
+          "Small frequent meals rather than large meals"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Loperamide (Imodium A-D)",
+            "dosage": "Adults: 4mg initially, then 2mg after each loose stool (max 8mg/24hrs for OTC, 16mg with MD supervision)",
+            "mechanism": "Slows intestinal motility",
+            "best_for": "Non-infectious diarrhea, traveler's diarrhea (if no fever)",
+            "notes": "Very effective. Do NOT use if fever, bloody stool, or severe abdominal pain",
+            "contraindications": "Bloody diarrhea, high fever, C. difficile colitis, children <2 years",
+            "warning": "Can worsen certain infections by preventing toxin clearance"
+          },
+          {
+            "medication": "Bismuth subsalicylate (Pepto-Bismol, Kaopectate)",
+            "dosage": "Adults: 524mg (2 tablets) every 30-60 minutes as needed (max 8 doses/24hrs)",
+            "mechanism": "Antimicrobial, anti-secretory, anti-inflammatory",
+            "best_for": "Traveler's diarrhea, food poisoning, general diarrhea",
+            "notes": "Can be used WITH loperamide. Will darken tongue/stool (normal)",
+            "contraindications": "Aspirin allergy, anticoagulation therapy, gout"
+          },
+          {
+            "medication": "Probiotics (Lactobacillus, Saccharomyces boulardii)",
+            "dosage": "Varies by product - follow label, typically 10-20 billion CFU daily",
+            "mechanism": "Restores intestinal flora",
+            "best_for": "Antibiotic-associated diarrhea prevention/treatment, general recovery",
+            "notes": "S. boulardii particularly effective for C. diff and antibiotic-associated diarrhea",
+            "contraindications": "Immunocompromised patients (rarely)"
+          },
+          {
+            "medication": "Oral rehydration salts (WHO-ORS, Pedialyte)",
+            "dosage": "Frequent sips throughout day - aim for matching output",
+            "mechanism": "Replaces fluids and electrolytes",
+            "best_for": "All diarrhea - prevents dehydration",
+            "notes": "Most critical component of treatment. Better than plain water",
+            "contraindications": "None"
+          }
+        ]
+      },
+      "red_flags": [
+        "Blood in stool (red blood or black tarry stools)",
+        "Mucus or pus in stool",
+        "High fever (>38.9°C/102°F)",
+        "Severe abdominal pain or tenderness",
+        "Signs of severe dehydration",
+        "Diarrhea lasting >3 days without improvement",
+        "Recent antibiotic use (C. difficile concern)",
+        "Recent travel to developing countries",
+        "Diarrhea in elderly or immunocompromised",
+        "Diarrhea with neurological symptoms (botulism, ciguatera)",
+        "Profuse watery diarrhea (cholera-like)",
+        "Pregnancy with severe diarrhea",
+        "Unable to keep any fluids down"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Severe dehydration with altered mental status",
+          "Bloody diarrhea with fever and severe abdominal pain",
+          "Signs of shock (rapid pulse, low BP, confusion)",
+          "Suspected botulism (neurological symptoms with diarrhea)"
+        ],
+        "urgent_care_same_day": [
+          "Blood in stool",
+          "High fever with diarrhea",
+          "Severe abdominal pain",
+          "Signs of moderate-severe dehydration",
+          "Diarrhea after recent antibiotics",
+          "Recent travel with persistent diarrhea",
+          "Diarrhea >3 days without improvement",
+          "Elderly, infant, or immunocompromised with diarrhea"
+        ],
+        "primary_care_few_days": [
+          "Mild persistent diarrhea",
+          "Recurrent episodes",
+          "Chronic diarrhea (>4 weeks)",
+          "Suspected food intolerance"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Most acute diarrhea is viral and self-limited (2-7 days)",
+          "Hydration is key - drink more than you think you need",
+          "Antibiotics usually not needed and can worsen some causes",
+          "Antidiarrheals can be harmful if fever or blood present",
+          "Hygiene critical: wash hands frequently, disinfect surfaces",
+          "Probiotics may shorten duration and aid recovery"
+        ],
+        "prevention": [
+          "Hand hygiene - most important",
+          "Food safety: cook meat thoroughly, wash produce",
+          "Safe water when traveling",
+          "Avoid raw/undercooked foods in endemic areas",
+          "Probiotics during antibiotic therapy"
+        ],
+        "rehydration_guidance": [
+          "Drink 8-16 oz after each loose stool",
+          "ORS better than sports drinks (better Na:glucose ratio)",
+          "Signs you're well-hydrated: pale yellow urine, normal urination frequency",
+          "Children need special attention - dehydrate faster"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "symptom_name": "Shortness of Breath (Dyspnea)",
+      "icd10_code": "R06.02",
+      "category": "Respiratory",
+      "description": "Uncomfortable sensation of difficulty breathing or inability to get enough air",
+      "severity_classification": {
+        "mild": {
+          "description": "Breathlessness only with moderate exertion",
+          "characteristics": "Can speak in full sentences, able to lie flat, normal respiratory rate"
+        },
+        "moderate": {
+          "description": "Breathlessness with minimal activity or at rest",
+          "characteristics": "Difficulty speaking full sentences, prefers sitting upright, increased respiratory rate"
+        },
+        "severe": {
+          "description": "Severe respiratory distress",
+          "characteristics": "Unable to speak, gasping for air, cyanosis, altered mental status, respiratory rate >30"
+        }
+      },
+      "common_causes": [
+        "Asthma exacerbation",
+        "Anxiety/panic attack",
+        "Pneumonia",
+        "COPD exacerbation",
+        "Heart failure",
+        "Pulmonary embolism",
+        "COVID-19",
+        "Anemia",
+        "Deconditioning/obesity",
+        "Pleural effusion",
+        "Pneumothorax"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Sit upright in comfortable position (forward-leaning may help)",
+          "Practice pursed-lip breathing: Inhale through nose (2 counts), exhale slowly through pursed lips (4 counts)",
+          "Use fan directed at face for cooling sensation",
+          "Stay calm - anxiety worsens breathlessness",
+          "Loosen tight clothing around neck/chest",
+          "Open window for fresh air circulation",
+          "Diaphragmatic breathing exercises",
+          "Maintain healthy weight to reduce work of breathing",
+          "Avoid triggers: allergens, smoke, pollution",
+          "Elevate head with pillows when sleeping",
+          "Stay hydrated",
+          "Gradual exercise program (after medical clearance)"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Bronchodilator inhalers (Primatene Mist - epinephrine)",
+            "dosage": "1-2 inhalations, wait 1 minute, may repeat (max 8 inhalations/24hrs)",
+            "mechanism": "Beta-agonist bronchodilator",
+            "best_for": "Mild asthma symptoms, bronchospasm",
+            "notes": "OTC epinephrine inhaler available but prescription bronchodilators (albuterol) much more effective and safer",
+            "contraindications": "Heart disease, hypertension, hyperthyroidism, diabetes",
+            "warning": "If needing frequently, requires medical evaluation"
+          },
+          {
+            "medication": "Note: Most causes of dyspnea require prescription treatment",
+            "dosage": "N/A",
+            "notes": "Seek medical evaluation for proper diagnosis and treatment",
+            "contraindications": "N/A"
+          }
+        ]
+      },
+      "red_flags": [
+        "CRITICAL: Sudden severe shortness of breath (CALL 911)",
+        "Chest pain with dyspnea (possible MI, PE, pneumothorax)",
+        "Blue lips, fingernails, or face (cyanosis)",
+        "Confusion or altered mental status",
+        "Severe wheezing or stridor",
+        "Coughing up blood",
+        "Inability to speak due to breathlessness",
+        "Respiratory rate >30 breaths/minute",
+        "Using accessory muscles to breathe (neck, abdomen)",
+        "Syncope (fainting) with dyspnea",
+        "Unilateral leg swelling with dyspnea (DVT/PE)",
+        "Recent surgery or prolonged immobility (PE risk)"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Severe sudden onset dyspnea",
+          "Chest pain with shortness of breath",
+          "Cyanosis (blue discoloration)",
+          "Confusion or unresponsiveness",
+          "Inability to speak",
+          "Suspected anaphylaxis (with swelling, hives)",
+          "Severe asthma attack not responding to inhaler"
+        ],
+        "urgent_care_same_day": [
+          "New onset dyspnea",
+          "Worsening chronic dyspnea",
+          "Dyspnea with fever and cough (pneumonia)",
+          "Persistent wheezing",
+          "Dyspnea limiting daily activities"
+        ],
+        "primary_care_within_week": [
+          "Gradual onset dyspnea",
+          "Dyspnea with exertion only",
+          "Chronic cough with dyspnea",
+          "Need for evaluation of known condition"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Shortness of breath is always a symptom requiring evaluation",
+          "Cardiac and pulmonary causes most common",
+          "Anxiety can cause dyspnea but is diagnosis of exclusion",
+          "Progressive worsening requires urgent evaluation",
+          "Learn proper inhaler technique if prescribed",
+          "Create asthma action plan if applicable"
+        ],
+        "breathing_techniques": [
+          "Pursed-lip breathing slows breathing rate and keeps airways open longer",
+          "Diaphragmatic breathing more efficient than chest breathing",
+          "Practice when well to use during episodes",
+          "Sitting upright or leaning forward reduces work of breathing"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "symptom_name": "Chest Pain",
+      "icd10_code": "R07.9",
+      "category": "Cardiovascular/Respiratory",
+      "description": "Discomfort or pain in chest region - REQUIRES CAREFUL EVALUATION",
+      "severity_classification": {
+        "mild": {
+          "description": "Brief, sharp, or positional pain",
+          "characteristics": "Reproducible with movement, no radiation, short duration"
+        },
+        "moderate": {
+          "description": "Persistent discomfort",
+          "characteristics": "Noticeable pain affecting activities, may radiate, unclear cause"
+        },
+        "severe": {
+          "description": "Severe crushing or pressure sensation",
+          "characteristics": "Substernal pressure, radiation to arm/jaw, associated symptoms (sweating, nausea), prolonged duration"
+        }
+      },
+      "common_causes": [
+        "Musculoskeletal (chest wall strain, costochondritis) - most common non-cardiac",
+        "GERD/esophageal spasm",
+        "Anxiety/panic attack",
+        "Pleurisy/pleuritic pain",
+        "CARDIAC CAUSES (MUST RULE OUT):",
+        "- Acute coronary syndrome (heart attack)",
+        "- Angina pectoris",
+        "- Pericarditis",
+        "PULMONARY CAUSES:",
+        "- Pulmonary embolism",
+        "- Pneumonia",
+        "- Pneumothorax"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "FIRST: Rule out cardiac emergency (see red flags)",
+          "Rest and avoid strenuous activities",
+          "Apply heat or cold to chest wall if musculoskeletal",
+          "Practice stress reduction if anxiety-related",
+          "Avoid GERD triggers if reflux suspected: spicy/fatty foods, lying down after eating",
+          "Maintain good posture",
+          "Deep breathing exercises (if not cardiac)",
+          "Gentle stretching of chest muscles"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Antacids (Tums, Maalox)",
+            "dosage": "As directed on package",
+            "mechanism": "Neutralizes stomach acid",
+            "best_for": "GERD-related chest pain",
+            "notes": "ONLY after cardiac causes ruled out. Quick test: if antacids relieve pain, suggests GERD",
+            "contraindications": "None significant",
+            "warning": "Do NOT assume chest pain is GERD without evaluation"
+          },
+          {
+            "medication": "Ibuprofen",
+            "dosage": "400mg every 6-8 hours",
+            "mechanism": "Anti-inflammatory",
+            "best_for": "Musculoskeletal or pleuritic chest pain",
+            "notes": "ONLY after cardiac causes ruled out",
+            "contraindications": "History of GI bleeding, kidney disease",
+            "warning": "Do NOT take for cardiac chest pain"
+          },
+          {
+            "medication": "Aspirin 325mg (if suspected cardiac event)",
+            "dosage": "Chew 325mg immediately if heart attack suspected",
+            "mechanism": "Antiplatelet - reduces clot size",
+            "best_for": "SUSPECTED HEART ATTACK while waiting for EMS",
+            "notes": "Call 911 FIRST, then chew aspirin if no contraindications",
+            "contraindications": "Aspirin allergy, active bleeding",
+            "warning": "Only use if heart attack suspected and no contraindications"
+          }
+        ]
+      },
+      "red_flags": [
+        "⚠️ CRITICAL - CARDIAC WARNING SIGNS (CALL 911):",
+        "- Crushing/squeezing/pressure sensation in chest",
+        "- Pain radiating to left arm, jaw, neck, or back",
+        "- Associated with shortness of breath",
+        "- Sweating (diaphoresis)",
+        "- Nausea or vomiting",
+        "- Lightheadedness or syncope",
+        "- Sense of impending doom",
+        "- Pain lasting >5 minutes",
+        "- New chest pain in person >40 with cardiac risk factors",
+        "- Chest pain with exertion that improves with rest (angina)",
+        "⚠️ PULMONARY EMBOLISM SIGNS:",
+        "- Sudden onset pleuritic pain (worse with breathing)",
+        "- Recent surgery or immobility",
+        "- Unilateral leg swelling",
+        "- Hemoptysis (coughing blood)",
+        "⚠️ OTHER SERIOUS CAUSES:",
+        "- Tearing sensation radiating to back (aortic dissection)",
+        "- Chest pain with fever and cough (pneumonia)"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "ANY chest pain with cardiac characteristics",
+          "Sudden severe chest pain",
+          "Chest pain with dyspnea, sweating, or radiation",
+          "Suspected heart attack, PE, or aortic dissection",
+          "Chest pain in known cardiac disease",
+          "Chest pain not clearly musculoskeletal"
+        ],
+        "urgent_care_same_day": [
+          "Persistent chest discomfort after cardiac causes evaluated",
+          "Pleuritic chest pain with fever",
+          "Reproducible chest wall pain needing evaluation",
+          "Chest pain in young patient with low cardiac risk"
+        ],
+        "primary_care_scheduled": [
+          "Recurrent mild chest discomfort",
+          "Chronic stable chest wall pain",
+          "Follow-up after ED evaluation"
+        ]
+      },
+      "cardiac_risk_factors": [
+        "Age >40 years (men), >50 years (women)",
+        "Hypertension",
+        "Diabetes",
+        "Hyperlipidemia",
+        "Smoking",
+        "Family history of premature CAD",
+        "Obesity",
+        "Sedentary lifestyle",
+        "Known coronary artery disease"
+      ],
+      "patient_education": {
+        "key_points": [
+          "NEVER ignore chest pain - when in doubt, seek evaluation",
+          "Cardiac chest pain is often pressure/heaviness, not sharp",
+          "Classic heart attack presentation: substernal pressure radiating to left arm",
+          "Women and elderly may have atypical presentations",
+          "Time is muscle - early treatment saves heart tissue",
+          "Aspirin during heart attack reduces mortality",
+          "Most chest pain is not cardiac, but must rule out first"
+        ],
+        "when_to_call_911": [
+          "Any concern for cardiac cause",
+          "Better safe than sorry approach",
+          "Do NOT drive yourself to hospital",
+          "Chew aspirin 325mg if no contraindications",
+          "Have someone stay with you"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "symptom_name": "Abdominal Pain",
+      "icd10_code": "R10.9",
+      "category": "Gastrointestinal",
+      "description": "Pain or discomfort in abdominal region between chest and pelvis",
+      "severity_classification": {
+        "mild": {
+          "description": "Discomfort or cramping",
+          "characteristics": "Able to function, no guarding, tolerating oral intake"
+        },
+        "moderate": {
+          "description": "Notable pain affecting activities",
+          "characteristics": "Some difficulty with movement, localized tenderness, reduced oral intake"
+        },
+        "severe": {
+          "description": "Severe pain requiring medical attention",
+          "characteristics": "Unable to find comfortable position, guarding, rebound tenderness, associated symptoms"
+        }
+      },
+      "pain_location_significance": {
+        "right_upper_quadrant": "Gallbladder (cholecystitis), liver, right kidney",
+        "epigastric": "Stomach (gastritis, ulcer), pancreas, early appendicitis",
+        "left_upper_quadrant": "Spleen, stomach, left kidney, pancreas",
+        "right_lower_quadrant": "Appendix (appendicitis), ovary, colon",
+        "suprapubic": "Bladder, uterus, colon",
+        "left_lower_quadrant": "Diverticulitis, ovary, colon",
+        "periumbilical": "Early appendicitis, gastroenteritis, bowel obstruction",
+        "diffuse": "Gastroenteritis, peritonitis, bowel obstruction"
+      },
+      "common_causes": [
+        "Gastroenteritis (most common)",
+        "Constipation",
+        "Gas and bloating",
+        "Food intolerance",
+        "Gastritis/peptic ulcer",
+        "GERD",
+        "IBS",
+        "Appendicitis",
+        "Cholecystitis",
+        "Diverticulitis",
+        "Kidney stones",
+        "UTI/pyelonephritis",
+        "Menstrual cramps",
+        "Ovarian cyst",
+        "Pancreatitis",
+        "Bowel obstruction"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Rest in comfortable position",
+          "Apply heating pad to abdomen (15-20 min intervals)",
+          "Gentle abdominal massage in clockwise direction",
+          "Start with clear liquids, progress to bland diet",
+          "BRAT diet if tolerated: Bananas, Rice, Applesauce, Toast",
+          "Avoid gas-producing foods: beans, cabbage, carbonated drinks",
+          "Stay hydrated with small frequent sips",
+          "Peppermint or chamomile tea for cramping",
+          "Avoid solid foods initially if nausea/vomiting present",
+          "Practice stress reduction if stress-related",
+          "Knee-to-chest position may relieve gas pain"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Simethicone (Gas-X, Mylicon)",
+            "dosage": "Adults: 125-250mg after meals and at bedtime (max 500mg/24hrs)",
+            "mechanism": "Anti-foaming agent - breaks up gas bubbles",
+            "best_for": "Gas-related bloating and cramping",
+            "notes": "Very safe, works locally in gut, not absorbed systemically",
+            "contraindications": "None significant"
+          },
+          {
+            "medication": "Antacids (Tums, Maalox, Mylanta)",
+            "dosage": "As directed on package, usually 2-4 tablets as needed",
+            "mechanism": "Neutralizes stomach acid",
+            "best_for": "Upper abdominal pain from indigestion, gastritis, GERD",
+            "notes": "Provides rapid relief for acid-related pain",
+            "contraindications": "Kidney disease (magnesium/aluminum accumulation)"
+          },
+          {
+            "medication": "Bismuth subsalicylate (Pepto-Bismol)",
+            "dosage": "Adults: 524mg (2 tablets) every 30-60 min as needed (max 8 doses/24hrs)",
+            "mechanism": "Coats stomach, anti-inflammatory, mild antibacterial",
+            "best_for": "Upset stomach, indigestion, diarrhea with cramping",
+            "notes": "Will darken tongue and stool (normal)",
+            "contraindications": "Aspirin allergy, anticoagulation, children with viral illness"
+          },
+          {
+            "medication": "Acetaminophen",
+            "dosage": "500-1000mg every 4-6 hours",
+            "mechanism": "Analgesic",
+            "best_for": "Mild generalized abdominal discomfort",
+            "notes": "AVOID NSAIDs (ibuprofen) if stomach pain or GI bleeding suspected",
+            "contraindications": "Liver disease"
+          },
+          {
+            "medication": "Laxatives (if constipation)",
+            "dosage": "See constipation protocol - start with bulk-forming",
+            "mechanism": "Various - see constipation treatment",
+            "best_for": "Constipation-related abdominal pain",
+            "notes": "Do NOT use if severe pain, vomiting, or possible obstruction",
+            "contraindications": "Bowel obstruction, appendicitis"
+          }
+        ]
+      },
+      "red_flags": [
+        "Severe sudden onset pain (especially in older adults)",
+        "Right lower quadrant pain with fever (appendicitis)",
+        "Pain with fever and rigors",
+        "Vomiting blood or coffee-ground material",
+        "Blood in stool (red or black tarry stools)",
+        "Rigid, board-like abdomen",
+        "Severe tenderness with rebound (peritoneal signs)",
+        "Unable to pass gas or stool (obstruction)",
+        "Abdominal distension",
+        "Pain radiating to back (pancreatitis, AAA)",
+        "Pain with pregnancy (ectopic pregnancy risk)",
+        "Pain after abdominal trauma",
+        "Jaundice with abdominal pain",
+        "Severe pain with pulsating abdominal mass (AAA)",
+        "Pain preventing lying still or worsening with movement"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Severe sudden abdominal pain",
+          "Rigid abdomen with peritoneal signs",
+          "Vomiting blood",
+          "Severe pain in pregnant patient",
+          "Suspected ruptured AAA or ectopic pregnancy",
+          "Abdominal pain with shock signs (pale, clammy, rapid pulse)"
+        ],
+        "urgent_care_same_day": [
+          "Severe localized pain (RLQ suggesting appendicitis)",
+          "Pain with high fever",
+          "Pain with persistent vomiting",
+          "Blood in stool",
+          "Unable to pass gas/stool for >24 hours",
+          "Severe pain lasting >6 hours",
+          "Pain with urinary symptoms (flank pain, dysuria)"
+        ],
+        "primary_care_24_48hrs": [
+          "Mild to moderate persistent pain",
+          "Recurrent abdominal pain",
+          "Chronic intermittent pain",
+          "Need for evaluation of chronic condition"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Location of pain helps narrow differential diagnosis",
+          "Sudden severe pain in older adult is emergency",
+          "Right lower quadrant pain with fever = appendicitis until proven otherwise",
+          "Peritoneal signs (guarding, rebound) indicate serious pathology",
+          "Blood in vomit or stool always requires evaluation",
+          "Keep NPO (nothing by mouth) if severe pain or possible surgery"
+        ],
+        "alarm_features": [
+          "Age >50 with new onset pain",
+          "Unintentional weight loss",
+          "Nocturnal symptoms waking from sleep",
+          "Progressive worsening",
+          "Family history of GI malignancy or IBD"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "symptom_name": "Runny Nose (Rhinorrhea)",
+      "icd10_code": "J00",
+      "category": "Respiratory/ENT",
+      "description": "Excess nasal drainage, clear or discolored mucus from nose",
+      "severity_classification": {
+        "mild": {
+          "description": "Occasional clear drainage",
+          "characteristics": "Minimal interference with activities, no other symptoms"
+        },
+        "moderate": {
+          "description": "Frequent drainage requiring tissues",
+          "characteristics": "Interferes with sleep or daily activities, may have associated symptoms"
+        },
+        "severe": {
+          "description": "Constant drainage",
+          "characteristics": "Significant impairment, thick discolored drainage, fever, facial pain"
+        }
+      },
+      "rhinorrhea_characteristics": {
+        "clear_thin": "Viral infection, allergies, vasomotor rhinitis",
+        "thick_white": "Viral infection progressing",
+        "yellow_green": "Bacterial sinusitis (if >10 days), late viral infection",
+        "bloody": "Trauma, dry air, serious pathology if persistent",
+        "unilateral": "Foreign body, CSF leak, tumor (requires evaluation)"
+      },
+      "common_causes": [
+        "Common cold (viral rhinitis) - most common",
+        "Allergic rhinitis (hay fever)",
+        "Non-allergic rhinitis (vasomotor)",
+        "Acute sinusitis",
+        "Cold weather/temperature changes",
+        "Irritants (smoke, perfumes, pollution)",
+        "Medications (rhinitis medicamentosa from nasal spray overuse)",
+        "Spicy foods (gustatory rhinitis)",
+        "COVID-19",
+        "Influenza"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Saline nasal irrigation: Neti pot or saline spray 2-3 times daily",
+          "Stay well hydrated: Thins mucus secretions",
+          "Humidifier: Adds moisture to air, especially in bedroom",
+          "Steam inhalation: Hot shower or bowl of hot water, 10-15 minutes",
+          "Warm compress over sinuses",
+          "Elevate head while sleeping (2-3 pillows)",
+          "Hot tea or soup: Steam and hydration combined",
+          "Avoid allergens if allergic rhinitis",
+          "Blow nose gently: One nostril at a time to prevent ear pressure",
+          "Use soft tissues with lotion to prevent skin irritation"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Saline nasal spray/rinse",
+            "dosage": "Use as often as needed throughout day",
+            "mechanism": "Mechanical irrigation, moisturizes nasal passages",
+            "best_for": "All types of rhinorrhea, very safe",
+            "notes": "Use distilled, sterile, or previously boiled water in neti pots. Most effective treatment",
+            "contraindications": "None"
+          },
+          {
+            "medication": "Antihistamines - 2nd generation (Loratadine/Claritin, Cetirizine/Zyrtec, Fexofenadine/Allegra)",
+            "dosage": "Loratadine 10mg once daily, Cetirizine 10mg once daily, Fexofenadine 180mg once daily",
+            "mechanism": "H1-receptor antagonist - blocks histamine",
+            "best_for": "Allergic rhinitis",
+            "notes": "Less sedating than 1st generation. Take regularly for allergies, not as needed",
+            "contraindications": "Few, generally well-tolerated"
+          },
+          {
+            "medication": "Antihistamines - 1st generation (Diphenhydramine/Benadryl, Chlorpheniramine)",
+            "dosage": "Diphenhydramine 25-50mg every 4-6 hours, Chlorpheniramine 4mg every 4-6 hours",
+            "mechanism": "H1-receptor antagonist",
+            "best_for": "Nighttime use for allergic rhinitis",
+            "notes": "Causes significant drowsiness - bedtime use only. Dries secretions",
+            "contraindications": "Elderly (fall risk), glaucoma, prostate enlargement, driving/operating machinery"
+          },
+          {
+            "medication": "Pseudoephedrine (Sudafed)",
+            "dosage": "Adults: 30-60mg every 4-6 hours (max 240mg/24hrs) OR 120mg extended-release every 12 hours",
+            "mechanism": "Sympathomimetic - causes vasoconstriction in nasal passages",
+            "best_for": "Nasal congestion associated with rhinorrhea",
+            "notes": "Behind pharmacy counter (not prescription). Can increase BP and heart rate. More effective than phenylephrine",
+            "contraindications": "Uncontrolled hypertension, coronary artery disease, MAOIs, hyperthyroidism"
+          },
+          {
+            "medication": "Intranasal corticosteroids (Fluticasone/Flonase, Triamcinolone/Nasacort)",
+            "dosage": "2 sprays per nostril once daily",
+            "mechanism": "Reduces inflammation in nasal passages",
+            "best_for": "Allergic rhinitis, non-allergic rhinitis - MOST EFFECTIVE for chronic rhinorrhea",
+            "notes": "Takes 1-2 weeks for full effect. Very safe for long-term use. Aim spray toward outer wall of nose, not septum",
+            "contraindications": "Recent nasal surgery, nasal septum ulcer, epistaxis"
+          },
+          {
+            "medication": "Ipratropium nasal spray (Atrovent nasal)",
+            "dosage": "2 sprays per nostril 2-3 times daily",
+            "mechanism": "Anticholinergic - reduces nasal secretions",
+            "best_for": "Non-allergic rhinorrhea (runny nose without congestion)",
+            "notes": "Specifically targets rhinorrhea. Available OTC in some formulations",
+            "contraindications": "Glaucoma, prostate enlargement"
+          }
+        ]
+      },
+      "red_flags": [
+        "Clear drainage from nose after head trauma (CSF leak)",
+        "Unilateral persistent drainage (foreign body, tumor)",
+        "Bloody drainage that is persistent or recurrent",
+        "Facial pain and fever with yellow/green discharge >10 days (bacterial sinusitis)",
+        "Severe headache with runny nose",
+        "Vision changes",
+        "High fever with purulent discharge",
+        "Swelling of face or around eyes"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Clear fluid from nose after head trauma",
+          "Severe facial swelling",
+          "Vision changes or eye swelling",
+          "Severe headache with fever and purulent discharge"
+        ],
+        "urgent_care_same_day": [
+          "Symptoms >10 days with no improvement (bacterial sinusitis)",
+          "High fever with thick yellow/green discharge",
+          "Severe facial pain",
+          "Worsening after initial improvement (double-sickening)"
+        ],
+        "primary_care_within_week": [
+          "Persistent rhinorrhea >3 weeks",
+          "Recurrent episodes",
+          "Suspected allergies needing testing",
+          "Unilateral drainage"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Most common colds last 7-10 days",
+          "Color of mucus alone doesn't indicate bacterial infection",
+          "Nasal irrigation most effective home treatment",
+          "Intranasal steroids most effective medication for chronic rhinitis",
+          "Antihistamines only help if allergic cause",
+          "Avoid overuse of nasal decongestant sprays (>3 days) - causes rebound congestion"
+        ],
+        "viral_vs_bacterial": [
+          "Viral: Clear or white mucus, gradual onset, peak 3-5 days then improve",
+          "Bacterial: Symptoms >10 days without improvement, OR worsening after initial improvement, OR severe symptoms (fever >39°C, purulent discharge) for 3+ consecutive days"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "symptom_name": "Nasal Congestion",
+      "icd10_code": "R09.81",
+      "category": "Respiratory/ENT",
+      "description": "Blocked or stuffy nose, difficulty breathing through nasal passages",
+      "severity_classification": {
+        "mild": {
+          "description": "Slight stuffiness",
+          "characteristics": "Can still breathe through nose with some difficulty, minimal impact"
+        },
+        "moderate": {
+          "description": "Significant blockage",
+          "characteristics": "Difficult to breathe through nose, mouth breathing common, affects sleep"
+        },
+        "severe": {
+          "description": "Complete nasal obstruction",
+          "characteristics": "Cannot breathe through nose at all, significant sleep disruption, affecting quality of life"
+        }
+      },
+      "common_causes": [
+        "Common cold/viral URI",
+        "Allergic rhinitis",
+        "Sinusitis (acute or chronic)",
+        "Non-allergic rhinitis",
+        "Deviated septum",
+        "Nasal polyps",
+        "Rhinitis medicamentosa (rebound from decongestant spray overuse)",
+        "Pregnancy rhinitis",
+        "Adenoid hypertrophy (children)",
+        "Dry air",
+        "Environmental irritants"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Saline nasal irrigation: Neti pot or squeeze bottle 2-3 times daily - MOST EFFECTIVE",
+          "Steam inhalation: Hot shower, facial steaming with eucalyptus oil 10-15 minutes",
+          "Humidifier: Run in bedroom overnight, keep humidity 30-50%",
+          "Stay well-hydrated: 8-10 glasses water daily - thins secretions",
+          "Elevate head while sleeping: Use 2-3 pillows or raise head of bed 30-45 degrees",
+          "Warm compress: Apply over sinuses for 5-10 minutes several times daily",
+          "Spicy foods: May temporarily open nasal passages",
+          "Avoid known allergens",
+          "Maintain clean air: HEPA filters, regular dusting",
+          "Exercise: Mild exercise can temporarily relieve congestion"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Oxymetazoline nasal spray (Afrin, Dristan)",
+            "dosage": "2-3 sprays per nostril every 10-12 hours",
+            "mechanism": "Topical alpha-agonist - causes immediate vasoconstriction",
+            "best_for": "Severe temporary congestion relief",
+            "notes": "VERY EFFECTIVE but DO NOT USE >3 CONSECUTIVE DAYS - causes rebound congestion (rhinitis medicamentosa)",
+            "contraindications": "Do not use if already have rebound congestion",
+            "warning": "MAXIMUM 3 DAYS USE - longer causes dependence and worsening"
+          },
+          {
+            "medication": "Phenylephrine nasal spray",
+            "dosage": "2-3 sprays per nostril every 4 hours",
+            "mechanism": "Topical decongestant",
+            "best_for": "Short-term congestion relief",
+            "notes": "Less effective than oxymetazoline. Same 3-day maximum rule",
+            "contraindications": "Similar to oxymetazoline",
+            "warning": "MAXIMUM 3 DAYS USE"
+          },
+          {
+            "medication": "Pseudoephedrine (Sudafed)",
+            "dosage": "Adults: 30-60mg every 4-6 hours (max 240mg/24hrs) OR 120mg ER every 12 hours",
+            "mechanism": "Systemic decongestant - vasoconstriction throughout body",
+            "best_for": "Congestion without risk of rebound, can use longer than nasal sprays",
+            "notes": "Behind pharmacy counter. May increase blood pressure and heart rate. More effective than phenylephrine oral",
+            "contraindications": "Severe hypertension, coronary artery disease, MAOIs, hyperthyroidism"
+          },
+          {
+            "medication": "Phenylephrine oral (Sudafed PE)",
+            "dosage": "Adults: 10mg every 4 hours (max 60mg/24hrs)",
+            "mechanism": "Oral decongestant",
+            "best_for": "Mild congestion",
+            "notes": "On shelf without ID. Recent studies show minimal effectiveness - much less effective than pseudoephedrine",
+            "contraindications": "Severe hypertension, MAOIs"
+          },
+          {
+            "medication": "Intranasal corticosteroids (Fluticasone/Flonase, Triamcinolone/Nasacort, Budesonide/Rhinocort)",
+            "dosage": "2 sprays per nostril once daily",
+            "mechanism": "Reduces inflammation in nasal passages",
+            "best_for": "MOST EFFECTIVE for chronic congestion, allergic rhinitis, non-allergic rhinitis",
+            "notes": "Takes 1-2 weeks for full effect. Safe for long-term use. No rebound congestion. Aim toward outer nasal wall",
+            "contraindications": "Active nasal bleeding, recent nasal surgery"
+          },
+          {
+            "medication": "Antihistamines (if allergic cause)",
+            "dosage": "See rhinorrhea section - 2nd generation preferred",
+            "mechanism": "Blocks histamine receptors",
+            "best_for": "Allergic congestion",
+            "notes": "Only effective if allergies are cause. Cetirizine may help more with congestion than other 2nd gen",
+            "contraindications": "Minimal for 2nd generation"
+          }
+        ]
+      },
+      "red_flags": [
+        "Unilateral congestion (one side only) - may indicate structural issue or mass",
+        "Congestion with vision changes or eye swelling",
+        "Severe facial pain or swelling",
+        "High fever with congestion",
+        "Persistent congestion >4 weeks despite treatment",
+        "Congestion with recurrent nosebleeds",
+        "Complete obstruction in infant (medical emergency)",
+        "Congestion after facial trauma"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Severe facial swelling or cellulitis",
+          "Vision changes with sinus congestion",
+          "Infant with complete nasal obstruction (can't feed)",
+          "Signs of severe infection (high fever, altered mental status)"
+        ],
+        "urgent_care_same_day": [
+          "Severe pain with congestion",
+          "High fever with purulent discharge",
+          "Symptoms >10 days without improvement",
+          "Suspected bacterial sinusitis"
+        ],
+        "primary_care_1_2_weeks": [
+          "Chronic congestion >4 weeks",
+          "Unilateral persistent congestion",
+          "Recurrent sinusitis",
+          "Need for allergy evaluation",
+          "Possible structural issue (deviated septum, polyps)"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Nasal irrigation is the safest and one of most effective treatments",
+          "Intranasal steroids are most effective for chronic congestion - but take 1-2 weeks",
+          "NEVER use nasal decongestant sprays (Afrin) for more than 3 days",
+          "Rebound congestion from spray overuse is very difficult to treat",
+          "Oral pseudoephedrine more effective than phenylephrine (Sudafed PE)",
+          "Humidity between 30-50% optimal - too high promotes mold",
+          "Chronic congestion may indicate structural issue requiring ENT evaluation"
+        ],
+        "preventing_rebound_congestion": [
+          "Limit nasal decongestant sprays to 3 days maximum",
+          "Use intranasal steroids for maintenance if chronic congestion",
+          "If already have rebound: stop spray (may be worse for few days), use saline and intranasal steroid",
+          "Mark calendar when starting spray to track days used"
+        ],
+        "neti_pot_safety": [
+          "Use only distilled, sterile, or previously boiled (then cooled) water",
+          "Never use tap water - risk of rare but serious infection",
+          "Clean and dry neti pot after each use",
+          "Replace neti pot regularly"
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "symptom_name": "Body Aches (Myalgia)",
+      "icd10_code": "M79.1",
+      "category": "Musculoskeletal",
+      "description": "Generalized muscle pain and soreness throughout the body",
+      "severity_classification": {
+        "mild": {
+          "description": "Mild muscle soreness",
+          "characteristics": "Doesn't significantly interfere with activities, similar to post-exercise soreness"
+        },
+        "moderate": {
+          "description": "Noticeable muscle pain",
+          "characteristics": "Affects daily activities, causes fatigue, difficulty with movement"
+        },
+        "severe": {
+          "description": "Severe generalized pain",
+          "characteristics": "Debilitating pain, unable to perform normal activities, may have other severe symptoms"
+        }
+      },
+      "common_causes": [
+        "Viral infections (influenza, COVID-19, common cold)",
+        "Overexertion/muscle strain",
+        "Fibromyalgia",
+        "Chronic fatigue syndrome",
+        "Stress and tension",
+        "Dehydration",
+        "Medication side effects (statins)",
+        "Vitamin D deficiency",
+        "Autoimmune conditions (lupus, rheumatoid arthritis, polymyalgia rheumatica)",
+        "Lyme disease",
+        "Hypothyroidism",
+        "Electrolyte imbalances"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Rest adequately: Get 7-9 hours sleep, take breaks during day",
+          "Warm bath or shower: Add Epsom salts (magnesium sulfate) 2 cups to bath, soak 15-20 minutes",
+          "Heat application: Heating pad or warm compress to sore areas 15-20 minutes",
+          "Cold therapy: Ice packs if acute injury or inflammation, 15-20 minutes",
+          "Gentle stretching: Light yoga, range-of-motion exercises",
+          "Massage: Self-massage or professional massage therapy",
+          "Stay hydrated: 8-10 glasses water daily",
+          "Maintain good nutrition: Adequate protein, fruits, vegetables",
+          "Stress reduction: Meditation, deep breathing, relaxation techniques",
+          "Gradual return to activity: Don't push through severe pain",
+          "Maintain good posture",
+          "Ensure adequate vitamin D: Sunlight exposure, diet, or supplements"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Ibuprofen (Advil, Motrin)",
+            "dosage": "Adults: 400-600mg every 6-8 hours (max 1200mg/24hrs OTC, 2400mg with doctor supervision)",
+            "mechanism": "NSAID - anti-inflammatory and analgesic",
+            "best_for": "Most effective for muscle aches, especially with inflammation",
+            "notes": "Take with food. More effective than acetaminophen for muscle pain",
+            "contraindications": "GI ulcers, kidney disease, heart failure, bleeding disorders, pregnancy (3rd trimester)"
+          },
+          {
+            "medication": "Naproxen sodium (Aleve)",
+            "dosage": "Adults: 220-440mg initially, then 220mg every 8-12 hours (max 660mg/24hrs OTC)",
+            "mechanism": "NSAID - longer acting than ibuprofen",
+            "best_for": "Prolonged muscle aches, provides longer relief",
+            "notes": "Lasts 8-12 hours vs 6-8 for ibuprofen. Take with food",
+            "contraindications": "Similar to ibuprofen"
+          },
+          {
+            "medication": "Acetaminophen (Tylenol)",
+            "dosage": "Adults: 500-1000mg every 4-6 hours (max 4000mg/24hrs, 3000mg if regular alcohol use)",
+            "mechanism": "Analgesic (pain relief) without anti-inflammatory",
+            "best_for": "Alternative if NSAIDs contraindicated, fever with body aches",
+            "notes": "Less effective than NSAIDs for muscle pain but safer for stomach",
+            "contraindications": "Liver disease, alcohol use disorder"
+          },
+          {
+            "medication": "Topical pain relievers (Icy Hot, Tiger Balm, Biofreeze, Voltaren gel)",
+            "dosage": "Apply to affected areas 3-4 times daily as needed",
+            "mechanism": "Counterirritants (menthol, camphor) or topical NSAIDs",
+            "best_for": "Localized muscle aches, can supplement oral medications",
+            "notes": "Voltaren gel (diclofenac) is topical NSAID - now OTC. Wash hands after application",
+            "contraindications": "Do not apply to broken skin, avoid mucous membranes"
+          },
+          {
+            "medication": "Magnesium supplement",
+            "dosage": "Adults: 200-400mg daily (magnesium glycinate better absorbed)",
+            "mechanism": "Muscle relaxation, may address deficiency",
+            "best_for": "Chronic muscle aches, cramps, may help fibromyalgia",
+            "notes": "Can cause loose stools. Take with food. Epsom salt baths also provide magnesium",
+            "contraindications": "Kidney disease"
+          }
+        ]
+      },
+      "red_flags": [
+        "Body aches with very high fever (>39.4°C/103°F)",
+        "Severe muscle weakness or paralysis",
+        "Difficulty breathing with body aches",
+        "Severe neck stiffness with body aches and fever (meningitis)",
+        "Rash with body aches (Lyme disease, Rocky Mountain spotted fever)",
+        "Dark urine with severe muscle pain (rhabdomyolysis)",
+        "Recent tick bite with body aches",
+        "Body aches with confusion or altered mental status",
+        "Severe localized muscle pain and swelling",
+        "Body aches with jaundice",
+        "Progressive muscle weakness over days",
+        "New onset after starting statin medication"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Severe weakness or paralysis",
+          "Difficulty breathing with body aches",
+          "Severe neck stiffness with high fever (meningitis symptoms)",
+          "Confusion or altered consciousness",
+          "Dark brown/cola-colored urine with severe muscle pain (rhabdomyolysis)"
+        ],
+        "urgent_care_same_day": [
+          "High fever with severe body aches",
+          "Body aches with rash (especially after tick bite)",
+          "Severe pain not controlled with OTC medication",
+          "New onset severe weakness",
+          "Body aches with severe headache"
+        ],
+        "primary_care_within_week": [
+          "Body aches persisting >2 weeks without clear cause",
+          "Chronic generalized pain",
+          "Body aches with fatigue and other systemic symptoms",
+          "Suspected fibromyalgia or chronic fatigue syndrome",
+          "Body aches after starting new medication (especially statins)",
+          "Need for evaluation: CBC, ESR/CRP, vitamin D, thyroid function"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Viral infections are most common cause of acute body aches",
+          "Influenza typically causes more severe body aches than common cold",
+          "Rest and hydration are crucial during viral illness",
+          "NSAIDs (ibuprofen, naproxen) more effective than acetaminophen for muscle pain",
+          "Heat therapy helpful for muscle tension and chronic pain",
+          "Vitamin D deficiency common cause of chronic body aches",
+          "Fibromyalgia diagnosis requires chronic widespread pain >3 months",
+          "Statin medications can cause myalgias - discuss with doctor if severe"
+        ],
+        "when_to_worry": [
+          "Body aches with tick bite history (Lyme disease endemic areas)",
+          "Progressive weakness (not just pain)",
+          "Very dark urine (possible rhabdomyolysis)",
+          "Severe pain out of proportion to activity",
+          "No improvement after viral illness resolves"
+        ],
+        "prevention": [
+          "Influenza vaccination annually",
+          "Proper warm-up before exercise",
+          "Gradual increase in exercise intensity",
+          "Stay hydrated during physical activity",
+          "Adequate vitamin D (sunlight, diet, supplements)",
+          "Stress management",
+          "Good sleep hygiene"
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "symptom_name": "Chills",
+      "icd10_code": "R68.83",
+      "category": "Constitutional",
+      "description": "Feeling of coldness with shivering and shaking, often preceding or accompanying fever",
+      "severity_classification": {
+        "mild": {
+          "description": "Feeling cold with minimal shivering",
+          "characteristics": "Easily warmed with blankets, no significant shaking"
+        },
+        "moderate": {
+          "description": "Moderate shaking chills",
+          "characteristics": "Noticeable shivering, teeth chattering, difficulty staying warm"
+        },
+        "severe": {
+          "description": "Severe rigors - violent shaking chills",
+          "characteristics": "Uncontrollable shaking, severe discomfort, often with high fever"
+        }
+      },
+      "common_causes": [
+        "Fever from any cause (most common):",
+        "- Viral infections (influenza, COVID-19)",
+        "- Bacterial infections (UTI, pneumonia, bacteremia)",
+        "- Malaria (in endemic areas or travelers)",
+        "Hypothermia or cold exposure",
+        "Sepsis (medical emergency)",
+        "Medication reactions",
+        "Post-surgical (anesthesia aftermath)",
+        "Kidney stones (when passing)",
+        "Acute pyelonephritis"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Layer warm clothing and blankets (but allow heat dissipation if fever present)",
+          "Drink warm fluids: Hot tea, warm water, broth",
+          "Rest in warm environment (room temp 20-22°C/68-72°F)",
+          "Avoid rapid temperature changes",
+          "Monitor temperature regularly with thermometer",
+          "Stay in bed and rest",
+          "Keep dry - change clothes if sweating",
+          "Ensure adequate nutrition even if not hungry",
+          "Note: Do NOT bundle up excessively if high fever - this prevents heat dissipation"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Acetaminophen (Tylenol)",
+            "dosage": "Adults: 500-1000mg every 4-6 hours (max 4000mg/24hrs)",
+            "mechanism": "Antipyretic - reduces fever by acting on hypothalamus",
+            "best_for": "Fever and chills, first-line choice",
+            "notes": "Reduces fever which should reduce chills. Safe for most patients",
+            "contraindications": "Liver disease, alcohol use disorder"
+          },
+          {
+            "medication": "Ibuprofen (Advil, Motrin)",
+            "dosage": "Adults: 400mg every 6-8 hours (max 1200mg/24hrs OTC)",
+            "mechanism": "Antipyretic and anti-inflammatory",
+            "best_for": "Fever with chills, especially with body aches",
+            "notes": "May be more effective than acetaminophen for some patients. Take with food",
+            "contraindications": "GI ulcers, kidney disease, pregnancy (3rd trimester)"
+          },
+          {
+            "medication": "Note: Treat underlying cause",
+            "dosage": "N/A",
+            "notes": "Chills are symptom of fever/infection - antipyretics address fever, antibiotics may be needed for bacterial infection",
+            "contraindications": "N/A"
+          }
+        ]
+      },
+      "red_flags": [
+        "CRITICAL: Chills with very high fever >40°C (104°F)",
+        "Chills with altered mental status or confusion",
+        "Severe shaking chills (rigors) - suggests serious infection",
+        "Chills with severe headache and stiff neck (meningitis)",
+        "Chills with difficulty breathing",
+        "Chills with severe abdominal pain",
+        "Chills with rash that doesn't blanch (petechiae) - meningococcemia",
+        "Chills in immunocompromised patient",
+        "Chills with recent surgery or invasive procedure (sepsis risk)",
+        "Chills after travel to malaria-endemic area",
+        "Chills with flank pain (pyelonephritis)",
+        "Chills with recent catheterization or urinary procedure"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Chills with confusion or altered mental status",
+          "Chills with severe difficulty breathing",
+          "Chills with non-blanching rash",
+          "Chills with severe headache and stiff neck",
+          "Signs of septic shock (rapid pulse, low BP, confusion, cold extremities)",
+          "Severe rigors with very high fever in immunocompromised patient"
+        ],
+        "urgent_care_same_day": [
+          "Severe rigors (violent shaking chills)",
+          "High fever >39.4°C (103°F) with chills",
+          "Chills with severe pain (abdominal, flank, etc.)",
+          "Chills persisting despite antipyretics",
+          "Recent travel to malaria-endemic area with chills",
+          "Elderly patient with chills",
+          "Chills with urinary symptoms (possible pyelonephritis)"
+        ],
+        "primary_care_24_48hrs": [
+          "Recurrent chills",
+          "Mild to moderate chills with fever",
+          "Chills with mild to moderate symptoms of infection",
+          "Need for evaluation of underlying cause"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Chills are body's response to raise temperature - shivering generates heat",
+          "Usually precede or accompany fever",
+          "Severe rigors (violent shaking) suggest serious infection",
+          "Monitor temperature with thermometer - don't guess",
+          "Stay hydrated during febrile illness with chills",
+          "Rigors with fever may indicate bacteremia (bacteria in blood)",
+          "Don't bundle up excessively with high fever - prevents heat dissipation"
+        ],
+        "fever_management_with_chills": [
+          "Take antipyretic medication (acetaminophen or ibuprofen)",
+          "Layer blankets that can be easily removed as fever breaks",
+          "Expect to feel cold until fever starts to rise",
+          "May sweat profusely when fever breaks (normal)",
+          "Change into dry clothes after sweating",
+          "Tepid sponge bath if very high fever (not cold - causes more shivering)"
+        ],
+        "when_rigors_are_concerning": [
+          "More severe than typical fever chills",
+          "Violent uncontrollable shaking",
+          "Suggest bacteremia or serious infection",
+          "Common in: Pyelonephritis, pneumonia with bacteremia, sepsis, malaria",
+          "Always warrant same-day medical evaluation"
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "symptom_name": "Sneezing",
+      "icd10_code": "R06.7",
+      "category": "Respiratory/ENT",
+      "description": "Sudden, forceful expulsion of air through nose and mouth, often repetitive",
+      "severity_classification": {
+        "mild": {
+          "description": "Occasional sneezing",
+          "characteristics": "Few sneezes per day, minimal interference with activities"
+        },
+        "moderate": {
+          "description": "Frequent sneezing episodes",
+          "characteristics": "Multiple sneezing bouts, affects concentration and comfort"
+        },
+        "severe": {
+          "description": "Persistent uncontrollable sneezing",
+          "characteristics": "Continuous sneezing fits, significantly impairs daily function, exhausting"
+        }
+      },
+      "common_causes": [
+        "Allergic rhinitis (hay fever) - most common chronic cause",
+        "Viral upper respiratory infection (common cold)",
+        "Environmental irritants: dust, smoke, perfume, pollution",
+        "Photic sneeze reflex (bright light triggers)",
+        "Non-allergic rhinitis (vasomotor)",
+        "Sudden temperature changes",
+        "Spicy foods",
+        "Nasal irritation",
+        "Withdrawal from nasal decongestant sprays",
+        "Medication side effects (rare)"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Identify and avoid triggers: Keep diary to identify patterns",
+          "Air purification: HEPA filter in bedroom and main living areas",
+          "Allergen avoidance:",
+          "- Keep windows closed during high pollen season",
+          "- Shower and change clothes after outdoor exposure",
+          "- Wash bedding weekly in hot water",
+          "- Use allergen-proof pillow and mattress covers",
+          "- Remove shoes at door",
+          "Nasal saline rinses: Flush allergens from nasal passages 1-2 times daily",
+          "Humidifier: Maintain humidity 30-50% to prevent nasal dryness",
+          "Vacuum with HEPA filter regularly",
+          "Minimize dust: Declutter, use damp cloth for dusting",
+          "Stay hydrated: Keeps nasal passages moist",
+          "Wear sunglasses outdoors if pollen trigger"
+        ],
+        "otc_medications": [
+          {
+            "medication": "2nd generation antihistamines (Loratadine/Claritin, Cetirizine/Zyrtec, Fexofenadine/Allegra)",
+            "dosage": "Loratadine 10mg daily, Cetirizine 10mg daily, Fexofenadine 180mg daily",
+            "mechanism": "H1-receptor antagonist - blocks histamine release",
+            "best_for": "Allergic sneezing - FIRST LINE TREATMENT",
+            "notes": "Take regularly during allergy season, not just as needed. Less sedating. May take 1-2 hours for effect",
+            "contraindications": "Few, generally very well-tolerated"
+          },
+          {
+            "medication": "1st generation antihistamines (Diphenhydramine/Benadryl, Chlorpheniramine)",
+            "dosage": "Diphenhydramine 25-50mg every 4-6 hours, Chlorpheniramine 4mg every 4-6 hours",
+            "mechanism": "H1-receptor antagonist - older generation",
+            "best_for": "Severe acute allergic sneezing, nighttime use",
+            "notes": "Very effective but causes significant drowsiness. Faster onset than 2nd generation. Bedtime use preferred",
+            "contraindications": "Elderly (fall risk, confusion), glaucoma, prostate enlargement, operating machinery"
+          },
+          {
+            "medication": "Intranasal corticosteroids (Fluticasone/Flonase, Triamcinolone/Nasacort, Budesonide/Rhinocort)",
+            "dosage": "2 sprays per nostril once daily (some can use twice daily)",
+            "mechanism": "Reduces inflammation in nasal passages",
+            "best_for": "MOST EFFECTIVE for allergic rhinitis, especially for prevention",
+            "notes": "Takes 1-2 weeks for full effect. Use daily during allergy season. Aim spray toward outer nasal wall, away from septum",
+            "contraindications": "Recent nasal surgery, active epistaxis"
+          },
+          {
+            "medication": "Intranasal antihistamine (Azelastine/Astepro - OTC)",
+            "dosage": "1-2 sprays per nostril twice daily",
+            "mechanism": "Local antihistamine effect in nose",
+            "best_for": "Rapid relief of sneezing and nasal symptoms",
+            "notes": "Works within 15 minutes. Bitter taste common (tilt head forward after spray, avoid sniffing deeply)",
+            "contraindications": "Few"
+          },
+          {
+            "medication": "Combination intranasal spray (Azelastine + Fluticasone)",
+            "dosage": "1 spray per nostril twice daily",
+            "mechanism": "Antihistamine + corticosteroid",
+            "best_for": "Moderate to severe allergic rhinitis",
+            "notes": "More effective than either component alone. Recently available OTC",
+            "contraindications": "Similar to components"
+          },
+          {
+            "medication": "Oral decongestants (if congestion present)",
+            "dosage": "See congestion section",
+            "mechanism": "Reduces swelling",
+            "best_for": "Sneezing with significant congestion",
+            "notes": "Does not directly stop sneezing but helps associated congestion",
+            "contraindications": "Hypertension, heart disease"
+          }
+        ]
+      },
+      "red_flags": [
+        "Sneezing with severe difficulty breathing (anaphylaxis concern)",
+        "Sneezing with facial swelling or hives (allergic reaction)",
+        "Blood in nasal discharge with frequent sneezing",
+        "Unilateral symptoms (one-sided sneezing/discharge)",
+        "Severe persistent sneezing interfering with sleep/work",
+        "Sneezing with vision changes or severe headache",
+        "New onset in elderly without obvious cause"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Sneezing with difficulty breathing and swelling (anaphylaxis)",
+          "Severe allergic reaction symptoms",
+          "Respiratory distress"
+        ],
+        "urgent_care_same_day": [
+          "Severe uncontrolled sneezing significantly impairing function",
+          "Sneezing with severe headache or facial pain",
+          "Suspected severe allergic reaction (without anaphylaxis)"
+        ],
+        "primary_care_1_2_weeks": [
+          "Chronic sneezing affecting quality of life",
+          "Inadequate control with OTC medications",
+          "Need for allergy testing",
+          "Consideration for immunotherapy (allergy shots)",
+          "Unilateral or unusual symptoms"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Sneezing is protective reflex to expel irritants",
+          "Allergic rhinitis affects 10-30% of population",
+          "Intranasal corticosteroids most effective but require regular use",
+          "Antihistamines work best when taken regularly during allergy season, not just when symptomatic",
+          "Allergen avoidance is key - medications supplement, not replace",
+          "Sneezing into elbow prevents disease transmission",
+          "Seasonal patterns help identify triggers"
+        ],
+        "allergy_avoidance": [
+          "Check daily pollen counts",
+          "Stay indoors on high pollen days, especially windy days",
+          "Keep windows closed, use air conditioning",
+          "Shower before bed to remove allergens from hair/body",
+          "Wash bedding weekly in hot water (>130°F)",
+          "Remove carpeting if possible (hard floors better)",
+          "Keep pets out of bedroom if pet allergies",
+          "Use HEPA filters in vacuum and air purifiers"
+        ],
+        "medication_timing": [
+          "Start intranasal steroids 1-2 weeks before allergy season",
+          "Take antihistamines regularly during season, not as needed",
+          "Combination therapy (antihistamine + intranasal steroid) often most effective",
+          "May need to try different antihistamines - individual response varies"
+        ]
+      }
+    },
+        {
+      "id": 16,
+      "symptom_name": "Constipation",
+      "icd10_code": "K59.00",
+      "category": "Gastrointestinal",
+      "description": "Infrequent bowel movements (<3 per week) or difficulty passing stools",
+      "severity_classification": {
+        "mild": {
+          "description": "Occasional constipation",
+          "characteristics": "Slight decrease in frequency, minimal straining, responsive to dietary changes"
+        },
+        "moderate": {
+          "description": "Regular constipation",
+          "characteristics": "Hard, dry stools requiring straining, significant discomfort, 1-2 BMs per week"
+        },
+        "severe": {
+          "description": "Chronic severe constipation",
+          "characteristics": "No bowel movement for >7 days, severe pain, fecal impaction, vomiting"
+        }
+      },
+      "rome_iv_criteria": [
+        "Must include 2 or more of the following:",
+        "- Straining during >25% of defecations",
+        "- Lumpy or hard stools >25% of defecations",
+        "- Sensation of incomplete evacuation >25% of defecations",
+        "- Sensation of anorectal obstruction >25% of defecations",
+        "- Manual maneuvers required >25% of defecations",
+        "- Fewer than 3 spontaneous bowel movements per week"
+      ],
+      "common_causes": [
+        "Low fiber diet - most common",
+        "Inadequate fluid intake",
+        "Sedentary lifestyle",
+        "Ignoring urge to defecate",
+        "Medications: Opioids, iron, calcium, anticholinergics, antacids",
+        "IBS with constipation (IBS-C)",
+        "Pregnancy",
+        "Hypothyroidism",
+        "Diabetes",
+        "Neurological disorders (Parkinson's, MS)",
+        "Colorectal disorders",
+        "Chronic laxative abuse (paradoxically)",
+        "Aging"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Increase dietary fiber: Goal 25-35g daily",
+          "- Fruits: Prunes, pears, apples with skin, berries",
+          "- Vegetables: Broccoli, Brussels sprouts, leafy greens",
+          "- Whole grains: Oat bran, whole wheat bread, brown rice",
+          "- Legumes: Beans, lentils, chickpeas",
+          "Increase fluid intake: Minimum 8-10 glasses (64-80oz) water daily",
+          "Regular exercise: 30 minutes daily - stimulates bowel motility",
+          "Establish routine: Attempt BM at same time daily, especially after breakfast",
+          "Don't ignore urge: Go when body signals",
+          "Proper position: Elevate feet on stool (Squatty Potty) - straightens rectum",
+          "Prunes or prune juice: 4-6 prunes or 4-8oz juice daily - natural laxative (sorbitol)",
+          "Warm liquids: Coffee or warm water in morning stimulates bowel",
+          "Abdominal massage: Clockwise circles may help",
+          "Relaxation: Stress can worsen constipation"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Bulk-forming laxatives (Psyllium/Metamucil, Methylcellulose/Citrucel)",
+            "dosage": "Psyllium: 1 tablespoon in 8oz water 1-3 times daily. MUST drink plenty of water",
+            "mechanism": "Absorbs water, increases stool bulk and softness",
+            "best_for": "FIRST-LINE TREATMENT for chronic constipation, IBS-C",
+            "notes": "SAFEST for long-term use. Takes 2-3 days to work. Increase gradually to avoid gas. Drink 8oz water with each dose",
+            "contraindications": "Bowel obstruction, difficulty swallowing, don't take if dehydrated",
+            "onset": "12-72 hours"
+          },
+          {
+            "medication": "Stool softeners (Docusate sodium/Colace)",
+            "dosage": "Adults: 100-300mg daily in 1-3 divided doses",
+            "mechanism": "Draws water into stool, softens hard stools",
+            "best_for": "Preventing constipation when straining should be avoided (hemorrhoids, post-surgery, cardiac issues)",
+            "notes": "Very safe. More preventive than treatment. Less effective than other laxatives but very gentle",
+            "contraindications": "Bowel obstruction",
+            "onset": "24-72 hours"
+          },
+          {
+            "medication": "Osmotic laxatives (Polyethylene glycol/Miralax, Lactulose, Magnesium hydroxide/Milk of Magnesia)",
+            "dosage": "PEG 3350: 17g (1 capful) in 8oz liquid daily. Milk of Magnesia: 30-60mL daily",
+            "mechanism": "Draws water into colon, softens stool",
+            "best_for": "VERY EFFECTIVE for chronic constipation, safe for long-term use",
+            "notes": "Miralax/PEG very safe and effective. Can take daily. Tasteless, dissolves completely. May take 2-3 days initially",
+            "contraindications": "Bowel obstruction, kidney disease (for magnesium-containing)",
+            "onset": "PEG: 1-3 days, Milk of Magnesia: 30min-6hrs"
+          },
+          {
+            "medication": "Stimulant laxatives (Bisacodyl/Dulcolax, Senna/Senokot)",
+            "dosage": "Bisacodyl: 5-15mg orally at bedtime OR 10mg suppository. Senna: 15-30mg at bedtime",
+            "mechanism": "Stimulates colon muscle contractions",
+            "best_for": "Acute constipation, when rapid relief needed",
+            "notes": "EFFECTIVE but only for occasional use. Can cause cramping. Don't use regularly >1 week without MD",
+            "contraindications": "Bowel obstruction, appendicitis, abdominal pain of unknown cause",
+            "onset": "Oral: 6-12 hours, Suppository: 15-60 minutes",
+            "warning": "Chronic use can lead to dependence"
+          },
+          {
+            "medication": "Suppositories (Glycerin, Bisacodyl suppositories)",
+            "dosage": "Insert 1 suppository rectally as needed",
+            "mechanism": "Local stimulation of rectal evacuation",
+            "best_for": "When oral medications ineffective or rapid relief needed",
+            "notes": "Glycerin very safe. Works locally. Bisacodyl suppository faster than oral (15-60 min)",
+            "contraindications": "Rectal bleeding, anal fissures",
+            "onset": "Glycerin: 15-30 min, Bisacodyl: 15-60 min"
+          },
+          {
+            "medication": "Enemas (Fleet enema, Saline enema)",
+            "dosage": "As directed on package",
+            "mechanism": "Direct stimulation and lubrication of lower bowel",
+            "best_for": "Severe acute constipation, fecal impaction",
+            "notes": "Rapid relief but use only occasionally. Can disturb electrolyte balance if overused",
+            "contraindications": "Bowel obstruction, perforation risk",
+            "onset": "2-15 minutes"
+          }
+        ]
+      },
+      "red_flags": [
+        "No bowel movement for >1 week despite treatment",
+        "Severe abdominal pain or distension",
+        "Vomiting with constipation (bowel obstruction concern)",
+        "Blood in stool (bright red or black tarry)",
+        "Unintentional weight loss with constipation",
+        "Thin pencil-like stools (colon obstruction concern)",
+        "New onset constipation in person >50 years",
+        "Alternating constipation and diarrhea",
+        "Fever with constipation",
+        "Family history of colon cancer with new constipation"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Severe abdominal pain with inability to pass stool or gas",
+          "Vomiting with severe constipation",
+          "Abdominal distension with severe pain",
+          "Signs of bowel obstruction"
+        ],
+        "urgent_care_same_day": [
+          "No bowel movement >1 week",
+          "Severe pain with constipation",
+          "Suspected fecal impaction",
+          "Blood in stool",
+          "No improvement with OTC laxatives"
+        ],
+        "primary_care_1_2_weeks": [
+          "Chronic constipation (>3 months)",
+          "New onset constipation in adult >50",
+          "Need for colonoscopy screening",
+          "Constipation not responding to lifestyle modifications and OTC treatment",
+          "Evaluation for underlying causes (thyroid, diabetes, etc.)"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Fiber and water are foundation of treatment - medications supplement",
+          "Normal BM frequency ranges from 3 times per day to 3 times per week",
+          "Bristol Stool Chart helps assess stool consistency (Types 3-4 ideal)",
+          "Bulk-forming laxatives (fiber) safest for long-term use",
+          "Stimulant laxatives should be used sparingly - can cause dependence",
+          "Exercise and routine are as important as diet",
+          "Address underlying medication causes when possible"
+        ],
+        "laxative_ladder": [
+          "Step 1: Lifestyle - fiber, fluids, exercise (try 2-4 weeks)",
+          "Step 2: Bulk-forming laxative (Metamucil) + stool softener (Colace)",
+          "Step 3: Add osmotic laxative (Miralax) - safe for daily use",
+          "Step 4: Stimulant laxative occasionally (Dulcolax, Senna)",
+          "Step 5: Suppository or enema for acute severe constipation",
+          "If not controlled: Medical evaluation needed"
+        ],
+        "fiber_increase": [
+          "Increase gradually over 2-3 weeks to avoid gas/bloating",
+          "MUST increase water intake with fiber or can worsen constipation",
+          "Aim for 25g (women) to 35g (men) daily",
+          "Track fiber intake for few days to see current consumption",
+          "Food sources better than supplements when possible"
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "symptom_name": "Bloating",
+      "icd10_code": "R14.0",
+      "category": "Gastrointestinal",
+      "description": "Feeling of fullness, tightness, or swelling in abdomen",
+      "severity_classification": {
+        "mild": "Slight abdominal fullness, no visible distension",
+        "moderate": "Noticeable bloating, visible distension, discomfort",
+        "severe": "Severe distension, pain, significantly affects activities"
+      },
+      "common_causes": [
+        "Overeating",
+        "Gas accumulation",
+        "Constipation",
+        "IBS",
+        "Food intolerances (lactose, fructose, gluten)",
+        "SIBO (small intestinal bacterial overgrowth)",
+        "Swallowing air (aerophagia)",
+        "Menstruation",
+        "Carbonated beverages",
+        "High fiber foods (especially if introduced rapidly)"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Eat slowly and chew thoroughly",
+          "Smaller, more frequent meals instead of large meals",
+          "Avoid carbonated beverages",
+          "Limit gas-producing foods: beans, cabbage, broccoli, onions",
+          "Identify food intolerances: Keep food diary",
+          "Peppermint tea: Natural antispasmodic",
+          "Ginger tea: Aids digestion",
+          "Walk after meals: Promotes gas movement",
+          "Avoid chewing gum and hard candy",
+          "Avoid drinking through straws",
+          "Don't talk while eating",
+          "Wear loose-fitting clothing",
+          "Probiotics: May help with gas and bloating"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Simethicone (Gas-X, Mylicon, Phazyme)",
+            "dosage": "Adults: 125-250mg after meals and at bedtime as needed (max 500mg/day)",
+            "mechanism": "Anti-foaming agent breaks up gas bubbles",
+            "best_for": "Gas-related bloating - FIRST LINE",
+            "notes": "Very safe, works only in GI tract, not absorbed. Can take with other medications"
+          },
+          {
+            "medication": "Alpha-galactosidase (Beano)",
+            "dosage": "Take with first bite of gas-producing foods",
+            "mechanism": "Enzyme breaks down complex carbs before they cause gas",
+            "best_for": "Preventing bloating from beans, vegetables",
+            "notes": "Must take WITH food. Doesn't help after eating"
+          },
+          {
+            "medication": "Lactase enzyme (Lactaid)",
+            "dosage": "Take before consuming dairy",
+            "mechanism": "Breaks down lactose",
+            "best_for": "Lactose intolerance bloating",
+            "notes": "Very effective if lactose is the cause"
+          },
+          {
+            "medication": "Probiotics",
+            "dosage": "Varies by product, typically 10-20 billion CFU daily",
+            "mechanism": "Balances gut bacteria",
+            "best_for": "Chronic bloating, IBS, post-antibiotic",
+            "notes": "May take 4 weeks to see benefit"
+          }
+        ]
+      },
+      "red_flags": [
+        "Severe abdominal pain with bloating",
+        "Bloating with weight loss",
+        "Bloating with change in bowel habits",
+        "Blood in stool",
+        "Persistent vomiting",
+        "Fever with bloating",
+        "Bloating with ascites (fluid accumulation)",
+        "New onset in person >50"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Severe pain with rigid abdomen",
+          "Inability to pass gas or stool with severe bloating"
+        ],
+        "urgent_care_same_day": [
+          "Severe persistent bloating",
+          "Bloating with vomiting",
+          "Significant pain"
+        ],
+        "primary_care_1_2_weeks": [
+          "Chronic bloating >4 weeks",
+          "Need for evaluation of food intolerances",
+          "Suspected IBS or SIBO"
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "symptom_name": "Heartburn/GERD",
+      "icd10_code": "R12",
+      "category": "Gastrointestinal",
+      "description": "Burning sensation in chest, usually after eating, caused by stomach acid reflux",
+      "severity_classification": {
+        "mild": "Occasional heartburn <2 times/week",
+        "moderate": "Frequent heartburn 2-3 times/week, affects quality of life",
+        "severe": "Daily heartburn, nighttime symptoms, complications"
+      },
+      "common_causes": [
+        "Lower esophageal sphincter (LES) dysfunction",
+        "Hiatal hernia",
+        "Obesity",
+        "Pregnancy",
+        "Certain foods (spicy, fatty, acidic, chocolate)",
+        "Caffeine and alcohol",
+        "Smoking",
+        "Large meals",
+        "Lying down after eating",
+        "Medications (NSAIDs, some blood pressure meds)"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Elevate head of bed 6-8 inches (not just pillows)",
+          "Avoid eating 3 hours before bedtime",
+          "Smaller, more frequent meals",
+          "Avoid trigger foods: citrus, tomato, chocolate, mint, spicy, fatty",
+          "Avoid tight clothing around waist",
+          "Lose weight if overweight",
+          "Quit smoking",
+          "Limit alcohol and caffeine",
+          "Chew gum after meals (increases saliva, neutralizes acid)",
+          "Sleep on left side",
+          "Eat slowly"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Antacids (Tums, Rolaids, Maalox, Mylanta)",
+            "dosage": "As needed, typically 2-4 tablets after meals",
+            "mechanism": "Neutralizes stomach acid",
+            "best_for": "Immediate relief of mild heartburn",
+            "notes": "Fast acting (minutes). Short duration. Can take frequently",
+            "onset": "Minutes"
+          },
+          {
+            "medication": "H2-Receptor Antagonists (Famotidine/Pepcid, Cimetidine/Tagamet)",
+            "dosage": "Famotidine 10-20mg 1-2 times daily, up to 40mg/day",
+            "mechanism": "Reduces acid production",
+            "best_for": "Prevention and treatment, lasts longer than antacids",
+            "notes": "Takes 30-60 min to work. Lasts 6-12 hours. Can use daily",
+            "onset": "30-60 minutes"
+          },
+          {
+            "medication": "Proton Pump Inhibitors (Omeprazole/Prilosec, Lansoprazole/Prevacid, Esomeprazole/Nexium)",
+            "dosage": "Omeprazole 20mg once daily before breakfast for 14 days",
+            "mechanism": "Blocks acid pumps in stomach",
+            "best_for": "Frequent heartburn >2 days/week, most effective",
+            "notes": "Takes 1-4 days for full effect. Take before first meal. Use for 14 days then reassess",
+            "onset": "1-4 days for full effect"
+          }
+        ]
+      },
+      "red_flags": [
+        "Difficulty swallowing (dysphagia)",
+        "Painful swallowing",
+        "Chest pain (rule out cardiac cause first)",
+        "Unexplained weight loss",
+        "Persistent vomiting",
+        "Blood in vomit or stool",
+        "Symptoms >2 weeks despite OTC PPIs",
+        "Chronic hoarseness"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Chest pain (assume cardiac until proven otherwise)",
+          "Severe difficulty swallowing"
+        ],
+        "urgent_care_same_day": [
+          "Difficulty swallowing",
+          "Vomiting blood",
+          "Severe persistent symptoms"
+        ],
+        "primary_care_1_2_weeks": [
+          "Heartburn >2 times/week for >2 weeks",
+          "No improvement with OTC PPIs",
+          "Need for endoscopy evaluation",
+          "Chronic GERD management"
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "symptom_name": "Back Pain (Lower)",
+      "icd10_code": "M54.5",
+      "category": "Musculoskeletal",
+      "description": "Pain in lumbar region (lower back)",
+      "severity_classification": {
+        "mild": "Discomfort, doesn't limit activities significantly",
+        "moderate": "Pain affecting some activities, difficulty with movement",
+        "severe": "Debilitating pain, unable to move, radiating pain"
+      },
+      "common_causes": [
+        "Muscle strain (most common)",
+        "Poor posture",
+        "Herniated disc",
+        "Degenerative disc disease",
+        "Spinal stenosis",
+        "Osteoarthritis",
+        "Sciatica",
+        "Spondylolisthesis",
+        "Kidney stones",
+        "Rarely: Cauda equina syndrome (emergency)"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Stay active: Bed rest >2 days delays recovery",
+          "Ice: First 48-72 hours, 15-20 min every 2-3 hours",
+          "Heat: After 72 hours, heating pad 15-20 min",
+          "Stretching: Knee-to-chest, cat-cow, child's pose",
+          "Core strengthening exercises",
+          "Maintain good posture",
+          "Ergonomic workplace setup",
+          "Proper lifting technique: Bend knees, not back",
+          "Supportive mattress",
+          "Sleep on side with pillow between knees"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Ibuprofen",
+            "dosage": "400-600mg every 6-8 hours (max 1200mg/day OTC)",
+            "mechanism": "NSAID - anti-inflammatory",
+            "best_for": "FIRST LINE for acute back pain",
+            "notes": "More effective than acetaminophen. Take with food"
+          },
+          {
+            "medication": "Naproxen",
+            "dosage": "220-440mg initially, then 220mg every 8-12 hours",
+            "mechanism": "NSAID - longer acting",
+            "best_for": "Alternative to ibuprofen, longer duration",
+            "notes": "Twice daily dosing convenient"
+          },
+          {
+            "medication": "Acetaminophen",
+            "dosage": "500-1000mg every 6 hours (max 4000mg/day)",
+            "mechanism": "Analgesic",
+            "best_for": "If NSAIDs contraindicated",
+            "notes": "Less effective than NSAIDs for back pain"
+          },
+          {
+            "medication": "Topical NSAIDs (Voltaren gel)",
+            "dosage": "Apply to lower back 4 times daily",
+            "mechanism": "Local anti-inflammatory",
+            "best_for": "Localized pain, supplement to oral meds",
+            "notes": "Now OTC, fewer systemic side effects"
+          }
+        ]
+      },
+      "red_flags": [
+        "⚠️ CAUDA EQUINA SYNDROME (EMERGENCY):",
+        "- Loss of bowel/bladder control",
+        "- Saddle anesthesia (numbness in groin/inner thighs)",
+        "- Progressive leg weakness",
+        "- Sexual dysfunction",
+        "Back pain with fever",
+        "Back pain after significant trauma",
+        "History of cancer with new back pain",
+        "Age >50 with new back pain",
+        "Progressive neurological deficits",
+        "Night pain that wakes from sleep",
+        "Unexplained weight loss",
+        "IV drug use with back pain (infection risk)"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Cauda equina symptoms (bowel/bladder dysfunction)",
+          "Progressive leg weakness",
+          "Saddle anesthesia"
+        ],
+        "urgent_care_same_day": [
+          "Severe unrelenting pain",
+          "Back pain with fever",
+          "Significant trauma",
+          "New neurological symptoms"
+        ],
+        "primary_care_1_week": [
+          "Pain >6 weeks",
+          "Recurrent episodes",
+          "Sciatica symptoms",
+          "Need for physical therapy referral"
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "symptom_name": "Joint Pain (Arthralgia)",
+      "icd10_code": "M25.50",
+      "category": "Musculoskeletal",
+      "description": "Pain in one or more joints",
+      "severity_classification": {
+        "mild": "Slight discomfort with movement",
+        "moderate": "Pain limiting activities, some swelling",
+        "severe": "Severe pain, significant swelling, warmth, immobility"
+      },
+      "common_causes": [
+        "Osteoarthritis (most common)",
+        "Overuse/strain",
+        "Gout",
+        "Pseudogout",
+        "Rheumatoid arthritis",
+        "Viral arthritis",
+        "Lyme disease",
+        "Injury/trauma",
+        "Bursitis/tendinitis"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Rest affected joint initially",
+          "Ice: Acute injury/inflammation, 15-20 min every 2-3 hours",
+          "Heat: Chronic pain/stiffness, warm compress or bath",
+          "Gentle range-of-motion exercises",
+          "Low-impact exercise: Swimming, cycling",
+          "Weight loss if overweight",
+          "Joint protection techniques",
+          "Assistive devices if needed",
+          "Maintain good posture"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Ibuprofen",
+            "dosage": "400-600mg every 6-8 hours with food",
+            "mechanism": "NSAID",
+            "best_for": "Pain and inflammation",
+            "notes": "First line for joint pain"
+          },
+          {
+            "medication": "Naproxen",
+            "dosage": "220-440mg twice daily",
+            "mechanism": "NSAID - longer acting",
+            "best_for": "Chronic joint pain",
+            "notes": "Convenient twice-daily dosing"
+          },
+          {
+            "medication": "Topical NSAIDs (Voltaren gel, Aspercreme)",
+            "dosage": "Apply to joint 3-4 times daily",
+            "mechanism": "Local anti-inflammatory",
+            "best_for": "Knee, hand osteoarthritis",
+            "notes": "Effective with fewer GI side effects"
+          },
+          {
+            "medication": "Glucosamine/Chondroitin",
+            "dosage": "Glucosamine 1500mg + Chondroitin 1200mg daily",
+            "mechanism": "Cartilage building blocks",
+            "best_for": "Osteoarthritis (controversial efficacy)",
+            "notes": "May help some people. Takes 2-3 months to assess"
+          },
+          {
+            "medication": "Acetaminophen",
+            "dosage": "500-1000mg every 6 hours",
+            "mechanism": "Analgesic without anti-inflammatory",
+            "best_for": "If NSAIDs contraindicated",
+            "notes": "Less effective than NSAIDs for inflammation"
+          }
+        ]
+      },
+      "red_flags": [
+        "Hot, red, swollen joint with fever (septic arthritis)",
+        "Sudden severe joint pain (gout, pseudogout)",
+        "Multiple joints affected",
+        "Morning stiffness >1 hour (inflammatory arthritis)",
+        "Joint pain with tick bite history (Lyme)",
+        "Joint deformity",
+        "Unable to bear weight",
+        "Joint pain with rash"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Hot, swollen joint with fever (septic arthritis)",
+          "Severe pain with inability to move joint"
+        ],
+        "urgent_care_same_day": [
+          "Sudden severe joint pain and swelling",
+          "Red, hot joint",
+          "Recent trauma with severe pain/deformity"
+        ],
+        "primary_care_1_2_weeks": [
+          "Chronic joint pain",
+          "Multiple joints affected",
+          "Morning stiffness",
+          "Need for arthritis evaluation"
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "symptom_name": "Muscle Cramps",
+      "icd10_code": "R25.2",
+      "category": "Musculoskeletal",
+      "description": "Sudden, involuntary muscle contraction causing pain",
+      "severity_classification": {
+        "mild": "Brief cramp, easily relieved",
+        "moderate": "Painful cramping requiring intervention",
+        "severe": "Severe prolonged spasm, muscle tenderness after"
+      },
+      "common_causes": [
+        "Dehydration",
+        "Electrolyte imbalance (potassium, magnesium, calcium)",
+        "Muscle overuse/fatigue",
+        "Poor circulation",
+        "Nerve compression",
+        "Medications (diuretics, statins)",
+        "Pregnancy"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Immediate: Stretch and massage cramping muscle",
+          "Heat application to tight muscle",
+          "Stay well-hydrated throughout day",
+          "Eat potassium-rich foods: Bananas, oranges, potatoes",
+          "Magnesium-rich foods: Nuts, seeds, leafy greens",
+          "Warm bath before bed",
+          "Proper warm-up before exercise",
+          "Cool-down and stretching after exercise",
+          "Maintain electrolyte balance"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Magnesium supplement",
+            "dosage": "200-400mg daily (magnesium glycinate preferred)",
+            "mechanism": "Muscle relaxation",
+            "best_for": "Preventing recurrent cramps",
+            "notes": "May take several weeks. Can cause loose stools"
+          },
+          {
+            "medication": "Electrolyte drinks",
+            "dosage": "As needed during exercise",
+            "mechanism": "Replaces electrolytes",
+            "best_for": "Exercise-related cramps",
+            "notes": "Better than plain water during intense exercise"
+          },
+          {
+            "medication": "Topical muscle rubs",
+            "dosage": "Apply to affected area",
+            "mechanism": "Counterirritant",
+            "best_for": "Symptomatic relief",
+            "notes": "May provide comfort"
+          }
+        ]
+      },
+      "red_flags": [
+        "Frequent severe cramps",
+        "Cramps with muscle weakness",
+        "Cramps with swelling/redness",
+        "Night cramps interfering with sleep nightly",
+        "Associated with medication changes",
+        "Cramps with dark urine (rhabdomyolysis)"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Severe persistent cramp with dark urine",
+          "Cramps with severe weakness"
+        ],
+        "urgent_care_same_day": [
+          "Frequent disabling cramps",
+          "Cramps with significant swelling"
+        ],
+        "primary_care_1_2_weeks": [
+          "Recurrent cramps despite home measures",
+          "Need for electrolyte check",
+          "Medication review needed"
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "symptom_name": "Dizziness/Lightheadedness",
+      "icd10_code": "R42",
+      "category": "Neurological",
+      "description": "Feeling unsteady, faint, or like surroundings are spinning",
+      "severity_classification": {
+        "mild": "Brief episodes, no falls",
+        "moderate": "Frequent episodes affecting activities",
+        "severe": "Severe vertigo, unable to stand, nausea/vomiting"
+      },
+      "common_causes": [
+        "Dehydration",
+        "Orthostatic hypotension (blood pressure drop when standing)",
+        "Inner ear problems (BPPV, labyrinthitis)",
+        "Anxiety",
+        "Medication side effects",
+        "Anemia",
+        "Hypoglycemia",
+        "Heart rhythm problems"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Sit or lie down when dizzy",
+          "Rise slowly from sitting/lying",
+          "Stay well-hydrated: 8-10 glasses water daily",
+          "Avoid sudden position changes",
+          "Eat regular meals (prevents low blood sugar)",
+          "Limit caffeine and alcohol",
+          "Adequate sleep",
+          "Epley maneuver for BPPV (if diagnosed)"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Meclizine (Bonine, Dramamine Less Drowsy)",
+            "dosage": "25-50mg up to 3 times daily",
+            "mechanism": "Antihistamine - reduces vertigo",
+            "best_for": "Vertigo, motion sickness",
+            "notes": "May cause drowsiness"
+          },
+          {
+            "medication": "Dimenhydrinate (Dramamine)",
+            "dosage": "50-100mg every 4-6 hours",
+            "mechanism": "Antihistamine",
+            "best_for": "Acute vertigo, nausea",
+            "notes": "More sedating than meclizine"
+          }
+        ]
+      },
+      "red_flags": [
+        "Dizziness with chest pain",
+        "Severe headache with dizziness",
+        "Weakness, numbness, or speech difficulty",
+        "Vision changes",
+        "Loss of consciousness",
+        "Severe vomiting",
+        "Fall with injury",
+        "New onset in elderly"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Stroke symptoms (weakness, speech difficulty)",
+          "Chest pain with dizziness",
+          "Loss of consciousness",
+          "Severe headache"
+        ],
+        "urgent_care_same_day": [
+          "Persistent severe dizziness",
+          "Falls",
+          "Concerning symptoms"
+        ],
+        "primary_care_1_week": [
+          "Recurrent dizziness",
+          "Medication review needed",
+          "Need for evaluation"
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "symptom_name": "Insomnia",
+      "icd10_code": "G47.00",
+      "category": "Sleep Disorder",
+      "description": "Difficulty falling asleep, staying asleep, or early morning awakening",
+      "severity_classification": {
+        "mild": "Occasional difficulty, minimal daytime impact",
+        "moderate": "Frequent sleep problems, daytime fatigue",
+        "severe": "Chronic insomnia significantly impacting function"
+      },
+      "common_causes": [
+        "Stress and anxiety",
+        "Poor sleep hygiene",
+        "Depression",
+        "Medications",
+        "Caffeine/alcohol",
+        "Medical conditions (sleep apnea, chronic pain)",
+        "Shift work",
+        "Aging"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Consistent sleep schedule: Same bedtime/wake time daily",
+          "Create bedtime routine: Relaxing 30-60 min before bed",
+          "Optimize sleep environment: Dark, quiet, cool (60-67°F)",
+          "Limit screen time 1-2 hours before bed",
+          "Avoid caffeine after 2 PM",
+          "Exercise regularly (but not close to bedtime)",
+          "Avoid large meals before bed",
+          "Limit naps to 20-30 minutes before 3 PM",
+          "Get up if can't sleep after 20 minutes",
+          "Relaxation techniques: Progressive muscle relaxation, deep breathing"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Melatonin",
+            "dosage": "0.5-5mg 30-60 minutes before bed",
+            "mechanism": "Regulates sleep-wake cycle",
+            "best_for": "Circadian rhythm disorders, jet lag",
+            "notes": "Start with lowest dose. Natural sleep aid"
+          },
+          {
+            "medication": "Diphenhydramine (Benadryl, Unisom SleepGels)",
+            "dosage": "25-50mg at bedtime",
+            "mechanism": "Antihistamine - causes sedation",
+            "best_for": "Short-term use only",
+            "notes": "Can cause tolerance. Not for elderly. Hangover effect"
+          },
+          {
+            "medication": "Doxylamine (Unisom SleepTabs)",
+            "dosage": "25mg at bedtime",
+            "mechanism": "Antihistamine",
+            "best_for": "Short-term sleep aid",
+            "notes": "Similar to diphenhydramine"
+          }
+        ]
+      },
+      "red_flags": [
+        "Insomnia with depression/suicidal thoughts",
+        "Loud snoring/gasping (sleep apnea)",
+        "Excessive daytime sleepiness",
+        "Using alcohol to sleep",
+        "Insomnia affecting work/relationships"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Suicidal thoughts"
+        ],
+        "urgent_care_same_day": [
+          "Severe sleep deprivation affecting safety"
+        ],
+        "primary_care_1_2_weeks": [
+          "Chronic insomnia >3 weeks",
+          "Suspected sleep apnea",
+          "Need for CBT-I (cognitive behavioral therapy for insomnia)"
+        ]
+      }
+    },
+        {
+      "id": 24,
+      "symptom_name": "Anxiety",
+      "icd10_code": "F41.9",
+      "category": "Mental Health",
+      "description": "Excessive worry, nervousness, or fear that interferes with daily activities",
+      "severity_classification": {
+        "mild": {
+          "description": "Occasional worry, manageable symptoms",
+          "characteristics": "Able to function, symptoms don't significantly impair life"
+        },
+        "moderate": {
+          "description": "Frequent anxiety affecting some activities",
+          "characteristics": "Noticeable impact on work or relationships, some avoidance behaviors"
+        },
+        "severe": {
+          "description": "Constant anxiety, panic attacks, significantly impaired",
+          "characteristics": "Unable to function normally, may have agoraphobia, severe panic attacks"
+        }
+      },
+      "anxiety_disorders_types": {
+        "generalized_anxiety_disorder": "Excessive worry about various things for >6 months",
+        "panic_disorder": "Recurrent unexpected panic attacks",
+        "social_anxiety": "Fear of social situations and judgment",
+        "specific_phobias": "Intense fear of specific objects or situations",
+        "agoraphobia": "Fear of situations where escape might be difficult"
+      },
+      "common_causes": [
+        "Stress (work, relationships, finances)",
+        "Genetics and family history",
+        "Trauma or adverse experiences",
+        "Medical conditions (hyperthyroidism, heart arrhythmias)",
+        "Substance use or withdrawal (caffeine, alcohol, drugs)",
+        "Medication side effects",
+        "Chronic pain or illness",
+        "Major life changes"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Regular exercise: 30 minutes daily - proven to reduce anxiety",
+          "Deep breathing exercises: 4-7-8 technique (inhale 4, hold 7, exhale 8)",
+          "Progressive muscle relaxation: Tense and release muscle groups",
+          "Mindfulness meditation: 10-20 minutes daily",
+          "Limit caffeine: Max 200mg/day or avoid completely",
+          "Limit alcohol: Can worsen anxiety, especially during withdrawal",
+          "Adequate sleep: 7-9 hours, consistent schedule",
+          "Healthy diet: Regular meals, limit sugar",
+          "Social support: Talk to friends, family, support groups",
+          "Journaling: Write worries, identify triggers",
+          "Time management: Break tasks into smaller steps",
+          "Limit news/social media if triggering",
+          "Practice grounding techniques: 5-4-3-2-1 sensory awareness"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Note: Anxiety typically requires professional treatment",
+            "dosage": "N/A",
+            "mechanism": "N/A",
+            "best_for": "N/A",
+            "notes": "OTC options very limited. Some use L-theanine (200mg) or chamomile tea. However, CBT and prescription medications are evidence-based treatments",
+            "contraindications": "N/A"
+          },
+          {
+            "medication": "L-Theanine",
+            "dosage": "200-400mg daily",
+            "mechanism": "Amino acid that promotes relaxation without sedation",
+            "best_for": "Mild anxiety, taken from green tea",
+            "notes": "Some evidence for reducing stress. Generally safe. Not as effective as prescription medications",
+            "contraindications": "Pregnancy, breastfeeding (insufficient data)"
+          },
+          {
+            "medication": "Chamomile tea/extract",
+            "dosage": "Tea: 1-4 cups daily. Extract: As directed on package",
+            "mechanism": "Mild anxiolytic effect",
+            "best_for": "Very mild anxiety",
+            "notes": "Minimal evidence. May help some people. Very safe",
+            "contraindications": "Ragweed allergy"
+          },
+          {
+            "medication": "Magnesium supplement",
+            "dosage": "200-400mg daily (glycinate form preferred)",
+            "mechanism": "May help with anxiety symptoms, muscle tension",
+            "best_for": "Mild anxiety with muscle tension",
+            "notes": "Some people report benefit. Can cause loose stools",
+            "contraindications": "Kidney disease"
+          }
+        ]
+      },
+      "panic_attack_symptoms": [
+        "Rapid heartbeat or palpitations",
+        "Sweating",
+        "Trembling or shaking",
+        "Shortness of breath or feeling of choking",
+        "Chest pain or discomfort",
+        "Nausea or abdominal distress",
+        "Dizziness or lightheadedness",
+        "Chills or hot flashes",
+        "Numbness or tingling",
+        "Feeling of unreality (derealization)",
+        "Fear of losing control or 'going crazy'",
+        "Fear of dying"
+      ],
+      "red_flags": [
+        "Suicidal thoughts or plans - EMERGENCY",
+        "Self-harm behaviors",
+        "Panic attacks (need evaluation and treatment)",
+        "Severe impairment of daily functioning",
+        "Substance abuse to cope with anxiety",
+        "Anxiety with depression",
+        "Physical symptoms (chest pain) - rule out medical causes",
+        "Agoraphobia or severe avoidance",
+        "Anxiety after traumatic event (PTSD screening)"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911_or_988": [
+          "Suicidal thoughts or plans - Call 988 (Suicide & Crisis Lifeline)",
+          "Self-harm behaviors",
+          "Severe panic attack with chest pain (after ruling out cardiac cause)",
+          "Complete inability to function"
+        ],
+        "urgent_care_same_day": [
+          "Severe panic attacks",
+          "Rapid deterioration in functioning",
+          "Unable to care for self",
+          "New onset severe anxiety with physical symptoms"
+        ],
+        "primary_care_1_2_weeks": [
+          "Persistent anxiety >2 weeks affecting quality of life",
+          "Frequent worry interfering with work or relationships",
+          "Physical symptoms from anxiety (headaches, GI issues, muscle tension)",
+          "Need for evaluation and treatment - CBT, medications",
+          "Anxiety with depression"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Anxiety disorders are medical conditions, not weakness",
+          "Very treatable with therapy (CBT) and/or medications",
+          "Exercise as effective as some medications for mild-moderate anxiety",
+          "Caffeine and alcohol can significantly worsen anxiety",
+          "Panic attacks, while terrifying, are not dangerous",
+          "Avoidance makes anxiety worse - exposure therapy helps",
+          "Cognitive Behavioral Therapy (CBT) is gold standard",
+          "SSRIs/SNRIs are first-line medications if needed"
+        ],
+        "coping_strategies": [
+          "Identify triggers and early warning signs",
+          "Challenge anxious thoughts - are they realistic?",
+          "Face fears gradually (exposure therapy principle)",
+          "Accept uncertainty - can't control everything",
+          "Focus on what you can control",
+          "Practice self-compassion",
+          "Establish routine and structure"
+        ],
+        "when_to_call_988": [
+          "Any suicidal thoughts",
+          "Feeling hopeless or trapped",
+          "Unbearable emotional pain",
+          "Thoughts of harming self",
+          "988 Suicide & Crisis Lifeline: 24/7 support"
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "symptom_name": "Depression",
+      "icd10_code": "F32.9",
+      "category": "Mental Health",
+      "description": "Persistent sadness, loss of interest, and other symptoms affecting daily functioning",
+      "severity_classification": {
+        "mild": {
+          "description": "Low mood with some functional impairment",
+          "characteristics": "Able to maintain most responsibilities, symptoms noticeable but manageable"
+        },
+        "moderate": {
+          "description": "Significant symptoms with functional impairment",
+          "characteristics": "Difficulty with work or relationships, noticeable impact on daily life"
+        },
+        "severe": {
+          "description": "Severe symptoms, marked functional impairment",
+          "characteristics": "Unable to function normally, may have psychotic features or suicidal ideation"
+        }
+      },
+      "major_depression_criteria": {
+        "core_symptoms": [
+          "Depressed mood most of the day, nearly every day",
+          "Markedly diminished interest or pleasure in activities"
+        ],
+        "additional_symptoms": [
+          "Significant weight loss or gain (>5% in a month)",
+          "Insomnia or hypersomnia nearly every day",
+          "Psychomotor agitation or retardation",
+          "Fatigue or loss of energy",
+          "Feelings of worthlessness or excessive guilt",
+          "Diminished ability to think or concentrate",
+          "Recurrent thoughts of death or suicide"
+        ],
+        "diagnosis_requires": "At least 1 core symptom + 4 additional symptoms for ≥2 weeks, causing significant distress/impairment"
+      },
+      "common_causes": [
+        "Biochemical factors (neurotransmitter imbalance)",
+        "Genetics - family history increases risk",
+        "Life events and stress (loss, trauma, major changes)",
+        "Chronic illness or pain",
+        "Medications (some blood pressure meds, steroids, hormones)",
+        "Substance abuse",
+        "Seasonal changes (SAD - Seasonal Affective Disorder)",
+        "Postpartum period",
+        "Thyroid disorders or other medical conditions"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Regular exercise: 30 min, 5x/week - proven effective for mild-moderate depression",
+          "Maintain sleep schedule: 7-9 hours, consistent times",
+          "Healthy diet: Mediterranean diet shown beneficial",
+          "Sunlight exposure: 15-30 minutes daily, especially morning",
+          "Social connection: Even when you don't feel like it - crucial",
+          "Structure and routine: Set daily schedule",
+          "Small achievable goals: Break tasks into tiny steps",
+          "Avoid alcohol and drugs: Worsen depression",
+          "Limit social media: Can increase negative feelings",
+          "Practice self-compassion: Be kind to yourself",
+          "Engage in activities once enjoyed: Even if you don't feel like it",
+          "Volunteer or help others: Can improve mood"
+        ],
+        "otc_medications": [
+          {
+            "medication": "St. John's Wort (Hypericum perforatum)",
+            "dosage": "300mg three times daily (standardized to 0.3% hypericin)",
+            "mechanism": "Believed to affect serotonin, norepinephrine, dopamine",
+            "best_for": "Mild to moderate depression (NOT severe)",
+            "notes": "Some evidence of efficacy. MANY drug interactions (birth control, blood thinners, antidepressants, etc.). Must discuss with doctor before use",
+            "contraindications": "Taking any antidepressants (serotonin syndrome risk), many medications, pregnancy",
+            "warning": "Serious drug interactions - can reduce effectiveness of many medications"
+          },
+          {
+            "medication": "Omega-3 fatty acids (EPA/DHA)",
+            "dosage": "1000-2000mg EPA+DHA daily",
+            "mechanism": "Anti-inflammatory, may affect neurotransmitters",
+            "best_for": "Adjunct treatment (supplement to other treatments)",
+            "notes": "Modest benefit as adjunct. Higher EPA content may be better. Choose quality supplement",
+            "contraindications": "Bleeding disorders, high doses with blood thinners"
+          },
+          {
+            "medication": "Vitamin D (if deficient)",
+            "dosage": "1000-2000 IU daily, or per deficiency",
+            "mechanism": "Deficiency associated with depression",
+            "best_for": "If vitamin D deficient",
+            "notes": "Check levels. Supplementation if deficient may help mood",
+            "contraindications": "Hypercalcemia"
+          },
+          {
+            "medication": "SAMe (S-Adenosyl methionine)",
+            "dosage": "400-1600mg daily in divided doses",
+            "mechanism": "Involved in neurotransmitter synthesis",
+            "best_for": "Mild to moderate depression",
+            "notes": "Some evidence for efficacy. Expensive. Can interact with antidepressants",
+            "contraindications": "Bipolar disorder (can trigger mania), taking antidepressants"
+          }
+        ]
+      },
+      "red_flags": [
+        "⚠️ CRITICAL - SUICIDAL THOUGHTS OR PLANS",
+        "Thoughts of self-harm",
+        "Psychotic symptoms (hallucinations, delusions)",
+        "Severe functional impairment (not eating, not getting out of bed)",
+        "Bipolar disorder symptoms (periods of mania)",
+        "Depression after starting new medication",
+        "Postpartum depression",
+        "Depression in elderly (often underdiagnosed)",
+        "Rapid worsening of symptoms"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911_or_988": [
+          "SUICIDAL THOUGHTS OR PLANS - Call 988 Suicide & Crisis Lifeline",
+          "Thoughts of self-harm",
+          "Plan to hurt self or others",
+          "Psychotic symptoms",
+          "Complete inability to care for self"
+        ],
+        "urgent_care_same_day": [
+          "Severe depression with rapid worsening",
+          "Not eating or drinking",
+          "Severe psychomotor retardation",
+          "New medication with worsening depression/suicidal thoughts"
+        ],
+        "primary_care_within_week": [
+          "Persistent sad mood >2 weeks",
+          "Loss of interest in activities",
+          "Symptoms affecting work, relationships, or daily function",
+          "Physical symptoms from depression (fatigue, pain, GI issues)",
+          "Need for evaluation - PHQ-9 screening",
+          "Treatment with therapy and/or medications",
+          "Postpartum depression screening"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Depression is medical illness, not personal weakness or character flaw",
+          "Very treatable - 80-90% improve with treatment",
+          "Combination of therapy + medication most effective for moderate-severe",
+          "Exercise as effective as medication for mild depression",
+          "Medications take 4-6 weeks to work fully",
+          "SSRIs/SNRIs are first-line medications",
+          "Therapy (especially CBT, IPT) proven effective",
+          "Many people need long-term treatment to prevent recurrence"
+        ],
+        "warning_signs_of_suicide": [
+          "Talking about death or suicide",
+          "Looking for ways to kill oneself",
+          "Talking about feeling hopeless or having no purpose",
+          "Talking about being trapped or in unbearable pain",
+          "Increased use of alcohol or drugs",
+          "Withdrawing from family and friends",
+          "Changing eating or sleeping habits",
+          "Taking risks that could lead to death",
+          "Giving away prized possessions",
+          "Saying goodbye to friends and family",
+          "Putting affairs in order",
+          "Dramatic mood changes"
+        ],
+        "988_lifeline_info": [
+          "988 Suicide & Crisis Lifeline",
+          "Available 24/7, free and confidential",
+          "For anyone in suicidal crisis or emotional distress",
+          "Call or text 988",
+          "Chat available at 988lifeline.org",
+          "Connects to trained crisis counselors"
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "symptom_name": "Rash",
+      "icd10_code": "R21",
+      "category": "Dermatological",
+      "description": "Change in skin appearance - redness, bumps, blisters, or other abnormalities",
+      "severity_classification": {
+        "mild": {
+          "description": "Small area, minimal symptoms",
+          "characteristics": "Mild redness or small bumps, minimal itching or discomfort"
+        },
+        "moderate": {
+          "description": "Larger area, notable symptoms",
+          "characteristics": "More extensive rash, moderate itching, some impact on activities"
+        },
+        "severe": {
+          "description": "Widespread, severe symptoms, or concerning features",
+          "characteristics": "Large areas affected, severe itching/pain, blistering, fever, systemic symptoms"
+        }
+      },
+      "rash_characteristics": {
+        "macular": "Flat, discolored spots",
+        "papular": "Raised bumps",
+        "vesicular": "Fluid-filled blisters (chickenpox, herpes)",
+        "pustular": "Pus-filled bumps (acne, folliculitis)",
+        "petechial": "Tiny red/purple dots that don't blanch - CONCERNING",
+        "urticarial": "Hives - raised, itchy welts",
+        "eczematous": "Dry, scaly, itchy patches"
+      },
+      "common_causes": [
+        "Contact dermatitis (irritant or allergic)",
+        "Atopic dermatitis (eczema)",
+        "Allergic reaction",
+        "Viral exanthem (viral rash)",
+        "Drug reaction",
+        "Heat rash",
+        "Psoriasis",
+        "Fungal infection (ringworm, yeast)",
+        "Bacterial infection (cellulitis, impetigo)",
+        "Insect bites",
+        "Seborrheic dermatitis"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Identify and avoid trigger/irritant",
+          "Cool compress: Apply to affected area 15-20 minutes",
+          "Lukewarm oatmeal bath: Colloidal oatmeal, soak 15-20 minutes",
+          "Keep area clean and dry",
+          "Wear loose, breathable cotton clothing",
+          "Avoid scratching: Trim nails, wear gloves at night if needed",
+          "Moisturize: Fragrance-free, hypoallergenic lotion after bathing",
+          "Avoid hot water: Use lukewarm water for bathing",
+          "Avoid known allergens and irritants",
+          "For contact dermatitis: Wash area immediately after exposure",
+          "Gentle, fragrance-free soaps and detergents",
+          "Stress reduction: Stress can worsen some rashes"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Hydrocortisone cream 1%",
+            "dosage": "Apply thin layer to affected area 2-4 times daily for up to 7 days",
+            "mechanism": "Topical corticosteroid - reduces inflammation and itching",
+            "best_for": "Eczema, contact dermatitis, allergic rashes, insect bites",
+            "notes": "Don't use on face without doctor guidance. Don't use >7 days without medical advice. Avoid near eyes",
+            "contraindications": "Active infection (bacterial, viral, fungal), acne, rosacea"
+          },
+          {
+            "medication": "Antihistamines - Oral (Cetirizine, Loratadine, Diphenhydramine)",
+            "dosage": "Cetirizine 10mg daily, Loratadine 10mg daily, Diphenhydramine 25-50mg every 4-6 hours",
+            "mechanism": "Blocks histamine - reduces itching",
+            "best_for": "Itchy rashes, hives, allergic reactions",
+            "notes": "Diphenhydramine more sedating but works faster. 2nd generation (cetirizine, loratadine) less sedating",
+            "contraindications": "Elderly (1st generation antihistamines increase fall risk)"
+          },
+          {
+            "medication": "Calamine lotion",
+            "dosage": "Apply to affected area as needed",
+            "mechanism": "Soothing, mild astringent, cooling effect",
+            "best_for": "Poison ivy/oak, chickenpox, insect bites",
+            "notes": "Very safe. Pink color can stain clothing. Dries skin",
+            "contraindications": "None significant"
+          },
+          {
+            "medication": "Colloidal oatmeal products (Aveeno)",
+            "dosage": "Bath: Add to lukewarm water, soak 15-20 min. Lotion: Apply as needed",
+            "mechanism": "Soothing, anti-inflammatory properties",
+            "best_for": "Dry, itchy skin, eczema",
+            "notes": "Very gentle and safe. Good for sensitive skin",
+            "contraindications": "None"
+          },
+          {
+            "medication": "Antifungal creams (Clotrimazole, Miconazole, Terbinafine)",
+            "dosage": "Apply twice daily to affected area for 2-4 weeks",
+            "mechanism": "Kills fungus",
+            "best_for": "Ringworm, jock itch, athlete's foot, yeast infections",
+            "notes": "Continue for full course even if improves. Terbinafine (Lamisil) often most effective",
+            "contraindications": "Don't use if not fungal (can worsen other conditions)"
+          }
+        ]
+      },
+      "red_flags": [
+        "⚠️ CRITICAL: Rash with difficulty breathing or swelling (anaphylaxis)",
+        "Petechial rash (tiny red/purple dots that don't blanch) - possible meningitis",
+        "Rash with high fever",
+        "Rapidly spreading rash",
+        "Severe pain with rash",
+        "Blistering rash (especially if widespread)",
+        "Rash after new medication (drug reaction)",
+        "Rash with joint pain or swelling",
+        "Rash with eye involvement",
+        "Signs of infection: Increasing redness, warmth, pus, red streaks",
+        "Rash in immunocompromised person"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Rash with difficulty breathing, throat swelling (anaphylaxis)",
+          "Petechial rash with fever (possible meningococcemia)",
+          "Severe pain with rapidly spreading rash",
+          "Suspected Stevens-Johnson syndrome (severe blistering after medication)"
+        ],
+        "urgent_care_same_day": [
+          "Rash with high fever",
+          "Rapidly worsening rash",
+          "Severe widespread rash",
+          "Rash after new medication",
+          "Signs of secondary infection",
+          "Painful blistering rash (possible shingles)",
+          "Rash with joint swelling"
+        ],
+        "primary_care_few_days": [
+          "Persistent rash not improving with OTC treatment",
+          "Rash affecting face or genitals",
+          "Chronic recurring rash",
+          "Need for diagnosis (biopsy, testing)",
+          "Uncertain about cause or treatment"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Most rashes are benign and self-limited",
+          "Identify and avoid triggers when possible",
+          "Avoid scratching - can lead to infection and scarring",
+          "Moisturizing is key for many skin conditions",
+          "Hydrocortisone cream safe for short-term use (<7 days)",
+          "Antihistamines most helpful for itchy, allergic rashes",
+          "Take photos to track progression",
+          "New rash after medication should be evaluated"
+        ],
+        "specific_rash_tips": {
+          "poison_ivy": "Wash skin immediately with soap and water if exposed. Wash clothes and items that contacted plant. Rash not contagious (fluid doesn't spread it)",
+          "eczema": "Moisturize frequently (especially after bathing). Identify and avoid triggers. May need long-term management",
+          "hives": "Usually allergic. Take antihistamine. Most resolve in 24-48 hours. Chronic hives (>6 weeks) need evaluation",
+          "fungal": "Keep area clean and dry. Change socks daily. Complete full treatment course"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "symptom_name": "Itching (Pruritus)",
+      "icd10_code": "L29.9",
+      "category": "Dermatological",
+      "description": "Uncomfortable sensation causing desire to scratch",
+      "severity_classification": {
+        "mild": {
+          "description": "Occasional itching, easily ignored",
+          "characteristics": "Mild discomfort, doesn't affect sleep or daily activities"
+        },
+        "moderate": {
+          "description": "Frequent itching affecting activities",
+          "characteristics": "Notable discomfort, some sleep disruption, affects concentration"
+        },
+        "severe": {
+          "description": "Constant intense itching",
+          "characteristics": "Significant sleep disruption, skin damage from scratching, severely affects quality of life"
+        }
+      },
+      "pruritus_with_vs_without_rash": {
+        "with_rash": "Usually dermatological cause - eczema, psoriasis, contact dermatitis, fungal infection, scabies, etc.",
+        "without_rash": "May indicate systemic cause - needs evaluation. Causes include: kidney disease, liver disease, thyroid disorder, lymphoma, polycythemia vera, medications, dry skin, neuropathy"
+      },
+      "common_causes": [
+        "Dry skin (xerosis) - most common",
+        "Eczema (atopic dermatitis)",
+        "Contact dermatitis",
+        "Psoriasis",
+        "Insect bites",
+        "Allergic reactions",
+        "Urticaria (hives)",
+        "Fungal infections",
+        "Scabies",
+        "Medications",
+        "Systemic causes: Kidney disease, liver disease, thyroid disorders, diabetes, lymphoma, iron deficiency"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Moisturize regularly: Apply thick cream or ointment 2-3 times daily, especially after bathing",
+          "Lukewarm baths: Avoid hot water which dries skin",
+          "Oatmeal baths: Colloidal oatmeal, soak 15-20 minutes",
+          "Cool compress or ice pack: Apply to itchy area",
+          "Avoid scratching: Trim nails, wear cotton gloves at night",
+          "Pat or tap skin instead of scratching",
+          "Wear soft, breathable fabrics: Cotton preferred",
+          "Use fragrance-free, hypoallergenic products",
+          "Humidifier: Especially in winter, maintain 30-50% humidity",
+          "Avoid irritants: Harsh soaps, detergents, wool",
+          "Stress reduction: Stress can worsen itching",
+          "Keep cool: Heat worsens itching"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Antihistamines - 2nd generation (Cetirizine, Loratadine, Fexofenadine)",
+            "dosage": "Cetirizine 10mg daily, Loratadine 10mg daily, Fexofenadine 180mg daily",
+            "mechanism": "H1-receptor antagonist - blocks histamine-mediated itching",
+            "best_for": "Allergic itching, hives, itching without rash",
+            "notes": "Take regularly for best effect. Less sedating. Cetirizine may work better for itching than others",
+            "contraindications": "Few, generally well-tolerated"
+          },
+          {
+            "medication": "Antihistamines - 1st generation (Diphenhydramine, Hydroxyzine)",
+            "dosage": "Diphenhydramine 25-50mg every 4-6 hours, max at bedtime",
+            "mechanism": "H1-antagonist with sedating effect",
+            "best_for": "Severe itching, nighttime itching disrupting sleep",
+            "notes": "Very sedating - use at bedtime. More effective for itching than 2nd generation but drowsiness limits daytime use",
+            "contraindications": "Elderly (fall risk, confusion), glaucoma, prostate enlargement"
+          },
+          {
+            "medication": "Hydrocortisone cream 1%",
+            "dosage": "Apply thin layer to itchy areas 2-4 times daily (max 7 days)",
+            "mechanism": "Topical corticosteroid - reduces inflammation",
+            "best_for": "Localized itching from eczema, contact dermatitis, insect bites",
+            "notes": "Works for inflammatory itching. Don't use on face without guidance. Limit use to 7 days",
+            "contraindications": "Infected skin, fungal infections"
+          },
+          {
+            "medication": "Calamine lotion or Pramoxine cream",
+            "dosage": "Apply to affected area as needed",
+            "mechanism": "Calamine: Soothing, cooling. Pramoxine: Topical anesthetic",
+            "best_for": "Poison ivy, insect bites, chickenpox",
+            "notes": "Safe for frequent use. Calamine can dry skin. Pramoxine (in Caladryl, Gold Bond) numbs area",
+            "contraindications": "None significant"
+          },
+          {
+            "medication": "Menthol or camphor creams (Gold Bond, Sarna)",
+            "dosage": "Apply to itchy areas as needed",
+            "mechanism": "Counterirritant - provides cooling sensation",
+            "best_for": "Generalized itching, dry skin itching",
+            "notes": "Provides symptomatic relief. Can use frequently. Avoid mucous membranes",
+            "contraindications": "Broken skin"
+          },
+          {
+            "medication": "Moisturizers - Thick creams/ointments (CeraVe, Cetaphil, Eucerin, Aquaphor)",
+            "dosage": "Apply liberally 2-3 times daily, especially after bathing",
+            "mechanism": "Restores skin barrier, prevents water loss",
+            "best_for": "Dry skin itching - ESSENTIAL treatment",
+            "notes": "Ointments (petroleum-based) most effective but greasy. Creams good compromise. Apply to damp skin after bathing",
+            "contraindications": "None"
+          }
+        ]
+      },
+      "red_flags": [
+        "Severe itching without visible rash (systemic cause)",
+        "Itching with jaundice (yellowing skin/eyes) - liver disease",
+        "Itching with new medications",
+        "Severe itching affecting sleep for prolonged period",
+        "Itching with weight loss, fever, night sweats (lymphoma)",
+        "Itching with swollen lymph nodes",
+        "Burrows in skin (scabies)",
+        "Rapidly spreading itchy rash in household members (scabies)",
+        "No improvement with standard treatment"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911": [
+          "Itching with difficulty breathing, swelling (anaphylaxis)",
+          "Severe itching with signs of severe allergic reaction"
+        ],
+        "urgent_care_same_day": [
+          "Severe intractable itching",
+          "Itching with jaundice",
+          "Rapidly spreading among household (scabies)",
+          "Severe skin damage from scratching"
+        ],
+        "primary_care_1_2_weeks": [
+          "Itching without rash >2 weeks (needs evaluation for systemic causes)",
+          "Chronic persistent itching not responding to OTC treatment",
+          "Itching significantly affecting quality of life or sleep",
+          "Need for evaluation: Labs (kidney, liver, thyroid, CBC), dermatology referral if needed",
+          "Suspected scabies"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Moisturizing is THE most important treatment for most itching",
+          "Apply moisturizer within 3 minutes after bathing (to damp skin)",
+          "Scratching makes itching worse - breaks itch-scratch cycle",
+          "Itching without rash may indicate internal disease",
+          "Antihistamines work best when taken regularly, not as needed",
+          "Hot water temporarily relieves itching but worsens it long-term",
+          "Many causes of itching are chronic and need ongoing management"
+        ],
+        "breaking_itch_scratch_cycle": [
+          "Scratching provides brief relief but damages skin and worsens itching",
+          "Keep nails short and smooth",
+          "Wear cotton gloves at night",
+          "Apply cold compress instead of scratching",
+          "Tap or pat itchy area instead of scratching",
+          "Distraction techniques when urge to scratch arises",
+          "Address underlying cause for long-term relief"
+        ],
+        "when_systemic_cause_likely": [
+          "Itching all over without rash",
+          "Not responding to topical treatments and antihistamines",
+          "Associated symptoms: jaundice, weight loss, fatigue",
+          "Elderly patient with new onset generalized itching",
+          "Requires workup: CBC, metabolic panel, liver function, thyroid, kidney function"
+        ]
+      }
+    },
+        {
+      "id": 28,
+      "symptom_name": "Eye Redness",
+      "icd10_code": "H57.8",
+      "category": "Ophthalmological",
+      "description": "Redness or bloodshot appearance of the eye",
+      "severity_classification": {
+        "mild": {
+          "description": "Slight pinkness, no pain",
+          "characteristics": "Minimal discomfort, no vision changes, no discharge"
+        },
+        "moderate": {
+          "description": "Noticeable redness, some discomfort",
+          "characteristics": "Gritty feeling, mild discharge, some irritation"
+        },
+        "severe": {
+          "description": "Severe redness with concerning symptoms",
+          "characteristics": "Pain, vision changes, significant discharge, light sensitivity"
+        }
+      },
+      "common_causes": [
+        "Viral conjunctivitis (pink eye) - most common",
+        "Bacterial conjunctivitis",
+        "Allergic conjunctivitis",
+        "Dry eyes",
+        "Subconjunctival hemorrhage (broken blood vessel)",
+        "Blepharitis (eyelid inflammation)",
+        "Foreign body",
+        "Contact lens overwear",
+        "Eye strain",
+        "Irritants (smoke, chlorine)"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Warm compress: For bacterial/viral conjunctivitis, blepharitis - 10 min, 3-4 times daily",
+          "Cold compress: For allergic conjunctivitis - 10 min as needed",
+          "Artificial tears: Lubricating eye drops, as needed throughout day",
+          "Avoid rubbing eyes: Worsens irritation, spreads infection",
+          "Remove contact lenses: Until symptoms resolve",
+          "Maintain eye hygiene: Clean eyelids gently with warm water",
+          "Avoid eye makeup: Until infection resolves",
+          "Discard old eye makeup: Replace after eye infection",
+          "Wash hands frequently: Prevent spread",
+          "Avoid sharing towels, pillows: If infectious",
+          "Stay hydrated: Helps with dry eyes",
+          "Reduce screen time: Follow 20-20-20 rule",
+          "Remove irritants: Avoid smoke, allergens"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Artificial tears (Systane, Refresh, Blink)",
+            "dosage": "1-2 drops in affected eye(s) as needed, up to 4-6 times daily",
+            "mechanism": "Lubricates and moisturizes eye surface",
+            "best_for": "Dry eyes, mild irritation, computer eye strain",
+            "notes": "Preservative-free preferred for frequent use (>4x/day). Very safe. Can use with other eye drops (wait 5 min between)",
+            "contraindications": "None"
+          },
+          {
+            "medication": "Antihistamine eye drops (Ketotifen/Zaditor, Olopatadine/Pataday)",
+            "dosage": "1 drop in affected eye(s) twice daily",
+            "mechanism": "Blocks histamine - reduces allergic inflammation",
+            "best_for": "Allergic conjunctivitis - VERY EFFECTIVE",
+            "notes": "Now OTC. Works quickly (minutes). Can use for seasonal allergies. More effective than oral antihistamines for eye allergies",
+            "contraindications": "Few, generally safe"
+          },
+          {
+            "medication": "Decongestant eye drops (Visine, Clear Eyes)",
+            "dosage": "1-2 drops up to 4 times daily",
+            "mechanism": "Vasoconstriction - temporarily reduces redness",
+            "best_for": "Cosmetic redness reduction for special occasions",
+            "notes": "DO NOT USE REGULARLY - causes rebound redness. Masks problem without treating cause. Use sparingly",
+            "contraindications": "Glaucoma, regular use causes rebound hyperemia",
+            "warning": "Not for routine use - can worsen redness with regular use"
+          },
+          {
+            "medication": "Lubricating ointment (Refresh PM, Systane Nighttime)",
+            "dosage": "Apply small amount to lower lid at bedtime",
+            "mechanism": "Long-lasting lubrication",
+            "best_for": "Severe dry eyes, nighttime dryness, protection during sleep",
+            "notes": "Blurs vision - use only at bedtime. More effective than drops for severe dryness",
+            "contraindications": "None"
+          }
+        ]
+      },
+      "red_flags": [
+        "⚠️ Sudden vision loss or significant vision changes",
+        "Severe eye pain (not just irritation)",
+        "Light sensitivity (photophobia)",
+        "Foreign body that can't be flushed out",
+        "Eye injury or trauma",
+        "Pupils different sizes",
+        "Seeing halos around lights",
+        "Severe headache with eye redness",
+        "Eye redness with contact lens wear (keratitis risk)",
+        "Thick yellow/green discharge (bacterial infection)",
+        "Eye redness not improving after 2-3 days",
+        "Immunocompromised patient with eye redness",
+        "History of herpes simplex and eye redness"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911_or_ER": [
+          "Sudden vision loss",
+          "Severe eye pain",
+          "Eye injury or trauma",
+          "Chemical exposure to eye (flush with water for 15 min, then go to ER)",
+          "Pupils different sizes"
+        ],
+        "urgent_care_same_day": [
+          "Moderate to severe eye pain",
+          "Significant vision changes",
+          "Light sensitivity with pain",
+          "Foreign body sensation that won't flush out",
+          "Thick discharge with swollen lids (bacterial conjunctivitis)",
+          "Contact lens wearer with red, painful eye",
+          "Eye redness with headache and light sensitivity"
+        ],
+        "primary_care_1_2_days": [
+          "Persistent redness >3 days",
+          "Mild bacterial conjunctivitis",
+          "Recurrent eye problems",
+          "Chronic dry eyes needing prescription treatment",
+          "Need for comprehensive eye exam"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Viral conjunctivitis (pink eye) very contagious - frequent handwashing essential",
+          "Most cases of viral conjunctivitis resolve on their own in 1-2 weeks",
+          "Antibiotics only help bacterial conjunctivitis, not viral",
+          "Never share eye makeup, contact lenses, or towels",
+          "Remove contact lenses if eyes red - don't wear until resolved",
+          "Subconjunctival hemorrhage (broken blood vessel) looks scary but harmless",
+          "Artificial tears are safe and effective for most mild redness",
+          "Avoid decongestant eye drops (Visine) for regular use"
+        ],
+        "conjunctivitis_types": {
+          "viral": "Watery discharge, very contagious, often with cold symptoms. No antibiotics needed. Resolves 1-2 weeks",
+          "bacterial": "Thick yellow/green discharge, crusted lids in morning. May need antibiotic drops. Contagious",
+          "allergic": "Itchy, watery, both eyes affected. NOT contagious. Antihistamine drops very effective"
+        },
+        "when_antibiotics_needed": [
+          "Thick purulent discharge (yellow/green)",
+          "Swollen eyelids",
+          "Significant pain",
+          "Contact lens wearer (higher risk of serious infection)",
+          "Immunocompromised",
+          "Not improving after 3 days"
+        ]
+      }
+    },
+        {
+      "id": 29,
+      "symptom_name": "Earache (Otalgia)",
+      "icd10_code": "H92.0",
+      "category": "ENT (Ear, Nose, Throat)",
+      "description": "Pain in or around the ear",
+      "severity_classification": {
+        "mild": {
+          "description": "Slight discomfort",
+          "characteristics": "Mild pain, no fever, hearing normal"
+        },
+        "moderate": {
+          "description": "Noticeable pain",
+          "characteristics": "Moderate pain affecting activities, possible hearing changes"
+        },
+        "severe": {
+          "description": "Severe pain",
+          "characteristics": "Intense pain, fever, drainage, severe hearing loss"
+        }
+      },
+      "common_causes": [
+        "Otitis media (middle ear infection) - especially children",
+        "Otitis externa (swimmer's ear)",
+        "Earwax buildup",
+        "Eustachian tube dysfunction",
+        "TMJ disorder",
+        "Dental problems (referred pain)",
+        "Throat infection (referred pain)",
+        "Trauma",
+        "Foreign body"
+      ],
+      "treatment_protocol": {
+        "home_remedies": [
+          "Warm compress: Apply to ear 15-20 minutes several times daily",
+          "Keep ear dry: Avoid getting water in ear, use earplugs when bathing",
+          "Chew gum: For eustachian tube dysfunction, helps equalize pressure",
+          "Rest with affected ear elevated: May reduce pressure",
+          "Avoid inserting anything into ear canal: No cotton swabs, bobby pins",
+          "Stay hydrated",
+          "Yawning or swallowing: Helps open eustachian tube",
+          "Humidity: Use humidifier if dry air contributing"
+        ],
+        "otc_medications": [
+          {
+            "medication": "Acetaminophen or Ibuprofen",
+            "dosage": "Acetaminophen 500-1000mg every 4-6 hrs, Ibuprofen 400mg every 6-8 hrs",
+            "mechanism": "Pain relief and anti-inflammatory",
+            "best_for": "Pain control - FIRST LINE",
+            "notes": "Ibuprofen may be slightly more effective due to anti-inflammatory properties",
+            "contraindications": "Standard contraindications for each medication"
+          },
+          {
+            "medication": "Ear drops - Antipyrine/Benzocaine (Auralgan, A/B Otic)",
+            "dosage": "Fill ear canal, keep in place 5-10 min, 3-4 times daily",
+            "mechanism": "Local anesthetic + analgesic",
+            "best_for": "Symptomatic pain relief",
+            "notes": "DO NOT USE if eardrum perforated (drainage present). Provides temporary relief only - doesn't treat infection",
+            "contraindications": "Perforated eardrum (any drainage), ear tubes",
+            "warning": "Stop if ear is draining - indicates possible perforation"
+          },
+          {
+            "medication": "Swimmer's ear prevention drops (Isopropyl alcohol/Glycerin)",
+            "dosage": "Few drops after swimming or bathing",
+            "mechanism": "Dries ear canal, acidifies to prevent bacteria",
+            "best_for": "PREVENTION of swimmer's ear, not treatment",
+            "notes": "Use after water exposure if prone to swimmer's ear. Can make at home: 1:1 rubbing alcohol and white vinegar",
+            "contraindications": "Active infection, perforated eardrum, ear tubes"
+          }
+        ]
+      },
+      "red_flags": [
+        "Severe pain",
+        "Drainage from ear (pus, blood, clear fluid)",
+        "Hearing loss",
+        "High fever (>39°C/102°F)",
+        "Swelling around ear or mastoid area (behind ear)",
+        "Dizziness or balance problems",
+        "Facial weakness",
+        "Pain after head injury",
+        "Infant <6 months with ear pain",
+        "Diabetes or immunocompromised with ear infection",
+        "Sudden severe pain that then improves (possible perforation)"
+      ],
+      "when_to_seek_medical_care": {
+        "emergency_911_or_ER": [
+          "Severe pain with facial weakness or drooping",
+          "Ear pain after significant head trauma",
+          "Severe swelling behind ear with fever (mastoiditis)",
+          "Signs of meningitis (stiff neck, severe headache, confusion)"
+        ],
+        "urgent_care_same_day": [
+          "Severe ear pain",
+          "High fever with ear pain",
+          "Drainage from ear",
+          "Hearing loss",
+          "Infant or young child with ear pain and fever",
+          "Ear pain not controlled with OTC pain medication",
+          "Swelling around ear"
+        ],
+        "primary_care_1_3_days": [
+          "Moderate ear pain",
+          "Ear pain lasting >2-3 days",
+          "Recurrent ear infections",
+          "Suspected ear wax impaction",
+          "Need for ear examination"
+        ]
+      },
+      "patient_education": {
+        "key_points": [
+          "Otitis media (middle ear infection) often follows viral URI",
+          "Most middle ear infections are viral and don't need antibiotics",
+          "Antibiotics prescribed if: Age <6 months, severe symptoms, bilateral in young child, persistent >48-72 hours",
+          "Never put objects in ear canal - including cotton swabs",
+          "Ear drops don't work for middle ear infections (behind eardrum)",
+          "Swimmer's ear (outer ear infection) very different from middle ear infection",
+          "Don't use ear drops if drainage present - may indicate perforation"
+        ],
+        "otitis_media_vs_externa": {
+          "otitis_media": "Middle ear infection behind eardrum. Often after cold. Ear looks red when examined. Needs oral antibiotics if bacterial. Ear drops don't help",
+          "otitis_externa": "Outer ear canal infection (swimmer's ear). Pain with pulling on ear or pressing tragus. Often after water exposure. Needs antibiotic ear drops"
+        },
+        "prevention": {
+          "otitis_media": "Breastfeeding infants, avoid secondhand smoke, vaccinations up to date, avoid bottle propping",
+          "otitis_externa": "Dry ears after swimming, use prevention drops if prone, avoid cotton swabs, don't remove all earwax (it's protective)"
+        }
+      }
+    },
+    {
+  "id": 30,
+  "symptom_name": "Toothache",
+  "icd10_code": "K08.8",
+  "category": "Dental",
+  "description": "Pain in or around a tooth",
+  "severity_classification": {
+    "mild": {
+      "description": "Mild sensitivity or discomfort",
+      "characteristics": "Brief pain with hot/cold, no spontaneous pain"
+    },
+    "moderate": {
+      "description": "Noticeable pain",
+      "characteristics": "Persistent discomfort, pain with chewing, some spontaneous pain"
+    },
+    "severe": {
+      "description": "Severe pain",
+      "characteristics": "Constant severe pain, swelling, fever, difficulty eating/sleeping"
+    }
+  },
+  "common_causes": [
+    "Dental cavity (caries)",
+    "Tooth abscess",
+    "Gum disease (periodontitis)",
+    "Tooth fracture",
+    "Impacted tooth (wisdom teeth)",
+    "Sinus infection (referred pain to upper teeth)",
+    "TMJ disorder",
+    "Sensitive teeth (exposed dentin)",
+    "Recent dental work (temporary sensitivity)",
+    "Grinding teeth (bruxism)"
+  ],
+  "treatment_protocol": {
+    "home_remedies": [
+      "Rinse with warm salt water: 1/2 tsp salt in 8oz warm water, swish 30 sec, repeat every 2-3 hours",
+      "Cold compress: Apply to cheek over painful area 15-20 min",
+      "Elevate head when sleeping: May reduce pressure and pain",
+      "Clove oil: Apply small amount to cotton ball, place near affected tooth (natural numbing agent)",
+      "Avoid triggers: Very hot, cold, or sweet foods and beverages",
+      "Soft foods: Avoid chewing on affected side",
+      "Maintain oral hygiene: Gentle brushing and flossing (don't skip painful area)",
+      "Avoid alcohol and smoking: Can worsen pain and delay healing"
+    ],
+    "otc_medications": [
+      {
+        "medication": "Ibuprofen",
+        "dosage": "400-600mg every 6-8 hours (max 1200mg/day OTC)",
+        "mechanism": "NSAID - anti-inflammatory and analgesic",
+        "best_for": "MOST EFFECTIVE for dental pain",
+        "notes": "Superior to acetaminophen for dental pain. Take with food. Can alternate with acetaminophen for severe pain",
+        "contraindications": "GI ulcers, kidney disease, bleeding disorders"
+      },
+      {
+        "medication": "Acetaminophen",
+        "dosage": "500-1000mg every 4-6 hours (max 4000mg/day)",
+        "mechanism": "Analgesic",
+        "best_for": "Alternative if NSAIDs contraindicated, or for combination with ibuprofen",
+        "notes": "Can alternate with ibuprofen every 3 hours for severe pain (e.g., ibuprofen at 9am, acetaminophen at noon, ibuprofen at 3pm)",
+        "contraindications": "Liver disease"
+      },
+      {
+        "medication": "Topical benzocaine gel (Orajel, Anbesol)",
+        "dosage": "Apply small amount directly to affected tooth/gum as needed (max 4 times daily)",
+        "mechanism": "Local anesthetic - numbs area",
+        "best_for": "Temporary relief while waiting for dental appointment",
+        "notes": "Provides 15-20 min relief. Don't swallow. Not for children <2 years. TEMPORARY ONLY",
+        "contraindications": "Children <2 years (methemoglobinemia risk)",
+        "warning": "Does NOT treat underlying problem - dental evaluation needed"
+      },
+      {
+        "medication": "Clove oil (Eugenol)",
+        "dosage": "Apply tiny amount to cotton ball, hold near tooth, or dilute 1-2 drops in carrier oil",
+        "mechanism": "Natural anesthetic and antiseptic",
+        "best_for": "Temporary relief, natural option",
+        "notes": "Traditional remedy with some evidence. Use sparingly - can irritate gums. Strong taste",
+        "contraindications": "Don't use undiluted, can damage tissues"
+      }
+    ]
+  },
+  "red_flags": [
+    "Severe pain not controlled by OTC medications",
+    "Facial swelling or swelling in neck",
+    "Fever",
+    "Difficulty swallowing or breathing",
+    "Pus or abscess visible",
+    "Broken or knocked-out tooth",
+    "Severe pain radiating to jaw, ear, or neck",
+    "Trismus (difficulty opening mouth)",
+    "Recent dental procedure with worsening pain (dry socket)",
+    "Bleeding that won't stop",
+    "Diabetes or immunocompromised with dental infection"
+  ],
+  "when_to_seek_medical_care": {
+    "emergency_911_or_ER": [
+      "Difficulty breathing or swallowing",
+      "Severe facial swelling affecting eye or extending to neck",
+      "High fever with severe dental pain and swelling",
+      "Suspected Ludwig's angina (floor of mouth swelling)"
+    ],
+    "urgent_dental_care_same_day": [
+      "Severe toothache",
+      "Visible abscess or significant swelling",
+      "Fever with toothache",
+      "Broken tooth with exposed nerve (extreme pain)",
+      "Knocked-out permanent tooth (bring tooth in milk, see dentist within 30 min if possible)",
+      "Trauma to teeth or jaw",
+      "Dry socket (severe pain 3-4 days after extraction)"
+    ],
+    "dental_appointment_1_3_days": [
+      "Persistent toothache >1-2 days",
+      "Sensitivity to hot/cold lasting >few seconds",
+      "Pain with chewing",
+      "Visible cavity or dark spot on tooth",
+      "Gum swelling around tooth",
+      "Any toothache should be evaluated - underlying problem won't resolve without treatment"
+    ]
+  },
+  "patient_education": {
+    "key_points": [
+      "Toothache indicates a problem that needs dental treatment",
+      "Pain medication provides temporary relief but doesn't fix the problem",
+      "Ibuprofen most effective OTC pain reliever for dental pain",
+      "Dental infections can become serious - don't delay treatment",
+      "Abscess can spread to neck, brain - potentially life-threatening",
+      "Knocked-out permanent tooth: Put back in socket if possible or store in milk, see dentist ASAP",
+      "Regular dental checkups prevent most dental emergencies"
+    ],
+    "emergency_tooth_care": {
+      "knocked_out_tooth": "Handle by crown not root. Rinse gently if dirty. Try to reinsert in socket. If not possible, store in milk or between cheek and gum. See dentist within 30 minutes",
+      "broken_tooth": "Rinse mouth, save pieces, cold compress for swelling, see dentist ASAP",
+      "object_stuck_between_teeth": "Try floss gently. Do NOT use sharp objects. See dentist if can't remove"
+    },
+    "prevention": [
+      "Brush twice daily with fluoride toothpaste",
+      "Floss daily",
+      "Limit sugary foods and drinks",
+      "Regular dental checkups every 6 months",
+      "Wear mouthguard for sports",
+      "Don't use teeth as tools",
+      "Address teeth grinding (bruxism) with night guard if needed"
+    ]
+  }
+},
+{
+  "id": 31,
+  "symptom_name": "Swelling/Edema",
+  "icd10_code": "R60.9",
+  "category": "Circulatory/Systemic",
+  "description": "Abnormal accumulation of fluid in tissues causing puffiness or enlargement",
+  "severity_classification": {
+    "mild": {
+      "description": "Slight puffiness, mild indentation with pressure",
+      "characteristics": "Cosmetic concern, minimal discomfort, doesn't affect function"
+    },
+    "moderate": {
+      "description": "Noticeable swelling, clear pitting",
+      "characteristics": "Affects comfort, some functional limitation, tight feeling"
+    },
+    "severe": {
+      "description": "Severe swelling, may have skin changes",
+      "characteristics": "Significant functional impairment, skin taut and shiny, possible skin breakdown"
+    }
+  },
+  "edema_types": {
+    "localized": "One area - suggests local cause (injury, infection, DVT, lymphatic obstruction)",
+    "generalized": "Multiple areas or entire body - suggests systemic cause (heart, kidney, liver disease)",
+    "unilateral_leg": "ONE leg swollen - DVT until proven otherwise",
+    "bilateral_legs": "Both legs - venous insufficiency, heart failure, medications",
+    "facial": "May indicate kidney disease, allergic reaction, or superior vena cava syndrome",
+    "abdominal": "Ascites - liver disease, cancer, heart failure"
+  },
+  "common_causes": [
+    "Prolonged sitting or standing",
+    "Injury or trauma",
+    "Pregnancy",
+    "Menstrual cycle",
+    "Venous insufficiency",
+    "Medications (calcium channel blockers, NSAIDs, corticosteroids, hormones)",
+    "Heart failure",
+    "Kidney disease",
+    "Liver disease",
+    "Lymphedema",
+    "Deep vein thrombosis (DVT) - SERIOUS",
+    "Allergic reaction"
+  ],
+  "treatment_protocol": {
+    "home_remedies": [
+      "Elevate affected area: Above heart level for 30 min, 3-4 times daily",
+      "Reduce salt intake: <2300mg sodium daily (1500mg if heart/kidney disease)",
+      "Stay hydrated: Paradoxically, dehydration can worsen edema",
+      "Regular movement: Avoid prolonged sitting/standing, walk around every hour",
+      "Compression stockings: 15-20 mmHg for mild edema (consult doctor for higher compression)",
+      "Exercise regularly: Promotes circulation, especially leg exercises",
+      "Massage: Gentle massage toward heart may help (lymphatic drainage)",
+      "Avoid tight clothing: Especially around ankles, waist",
+      "Maintain healthy weight: Obesity worsens edema",
+      "Elevate legs when sitting: Use footstool",
+      "Sleep with legs elevated: Pillows under ankles"
+    ],
+    "otc_medications": [
+      {
+        "medication": "Note: Edema requires treating underlying cause",
+        "dosage": "N/A",
+        "mechanism": "N/A",
+        "best_for": "N/A",
+        "notes": "OTC diuretics (water pills) NOT recommended without medical supervision. Can cause dangerous electrolyte imbalances. Focus on lifestyle modifications and treating underlying cause",
+        "contraindications": "N/A",
+        "warning": "Do NOT take OTC diuretics without doctor supervision"
+      },
+      {
+        "medication": "Compression stockings (15-20 mmHg)",
+        "dosage": "Wear during day, remove at night",
+        "mechanism": "External compression promotes venous return",
+        "best_for": "Mild leg edema from prolonged standing, venous insufficiency, pregnancy",
+        "notes": "Put on in morning before getting out of bed. Proper fit important. Higher compression requires prescription",
+        "contraindications": "Peripheral arterial disease (PAD), active DVT"
+      }
+    ]
+  },
+  "red_flags": [
+    "CRITICAL: Unilateral leg swelling with pain (DVT - blood clot)",
+    "Sudden swelling of face, lips, tongue (anaphylaxis)",
+    "Shortness of breath with leg swelling (heart failure, PE)",
+    "Chest pain with swelling",
+    "Swelling with decreased urination (kidney failure)",
+    "Abdominal swelling with jaundice (liver failure)",
+    "Red, hot, tender swelling (infection - cellulitis)",
+    "Swelling after long flight or immobility (DVT risk)",
+    "Rapid weight gain (>2-3 lbs in a day or 5 lbs in a week)",
+    "Swelling with severe headache, vision changes (preeclampsia in pregnancy)"
+  ],
+  "when_to_seek_medical_care": {
+    "emergency_911": [
+      "Sudden facial, lip, or tongue swelling with difficulty breathing (anaphylaxis)",
+      "Chest pain or severe shortness of breath with leg swelling",
+      "One swollen painful leg (especially if calf pain, warmth, redness) - DVT",
+      "Pregnant woman with sudden swelling and headache (preeclampsia)"
+    ],
+    "urgent_care_same_day": [
+      "Rapid onset swelling",
+      "Painful swollen leg",
+      "Red, hot, swollen area (cellulitis)",
+      "Significant shortness of breath with swelling",
+      "Rapid weight gain with swelling",
+      "Decreased urine output with swelling"
+    ],
+    "primary_care_1_2_weeks": [
+      "Persistent swelling >few days",
+      "Gradually worsening swelling",
+      "Swelling affecting quality of life",
+      "Need for evaluation: Cardiac echo, kidney function, liver function, venous duplex",
+      "Medication review (many meds cause edema)",
+      "Fitting for compression stockings"
+    ]
+  },
+  "patient_education": {
+    "key_points": [
+      "Edema is a symptom, not a diagnosis - needs evaluation for underlying cause",
+      "Unilateral (one-sided) leg swelling is DVT until proven otherwise",
+      "Elevation above heart level is the most effective home treatment",
+      "Salt restriction helps reduce fluid retention",
+      "Many common medications cause edema (calcium channel blockers, NSAIDs)",
+      "Compression stockings are very effective for venous edema",
+      "Don't take diuretics without medical supervision"
+    ],
+    "dvt_warning_signs": [
+      "Swelling in one leg only",
+      "Pain or tenderness in calf",
+      "Warmth in affected leg",
+      "Red or discolored skin",
+      "Recent surgery, long flight, or prolonged immobility",
+      "DVT is a medical emergency - can lead to pulmonary embolism (PE)"
+    ],
+    "when_edema_indicates_serious_disease": [
+      "Bilateral leg edema with shortness of breath (heart failure)",
+      "Facial/periorbital edema (kidney disease)",
+      "Abdominal swelling/ascites with jaundice (liver disease)",
+      "All-over edema (anasarca) - advanced organ failure",
+      "Requires urgent medical evaluation and treatment of underlying condition"
+    ]
+  }
+}
+
+
+    
+    
+  ]
+}
