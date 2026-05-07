@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../services/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import '../services/auth_service.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -15,11 +16,11 @@ class _SignupScreenState extends State<SignupScreen> {
 
   String _email = '';
   String _password = '';
+  DateTime? _selectedDOB;
   bool _loading = false;
   String _errorMessage = '';
-  bool _obscurePassword = true; // ✅ FIX 1: Track password visibility
+  bool _obscurePassword = true;
 
-  // ✅ FIX 2: Convert Firebase error codes to user-friendly messages
   String _getErrorMessage(dynamic error) {
     if (error is FirebaseAuthException) {
       switch (error.code) {
@@ -38,6 +39,76 @@ class _SignupScreenState extends State<SignupScreen> {
       }
     }
     return 'Something went wrong. Please try again.';
+  }
+
+  Future<void> _pickDOB() async {
+    final picked = await showDatePicker(
+      context: context,
+      initialDate: DateTime(2000),
+      firstDate: DateTime(1900),
+      lastDate: DateTime.now(),
+      helpText: 'Select your date of birth',
+      fieldLabelText: 'Date of Birth',
+      fieldHintText: 'DD/MM/YYYY',
+    );
+    if (picked != null) {
+      setState(() {
+        _selectedDOB = picked;
+        _errorMessage = '';
+      });
+    }
+  }
+
+  Future<void> _handleSignUp() async {
+    if (!_formKey.currentState!.validate()) return;
+
+    if (_selectedDOB == null) {
+      setState(() => _errorMessage = 'Please select your date of birth.');
+      return;
+    }
+
+    setState(() {
+      _loading = true;
+      _errorMessage = '';
+    });
+
+    try {
+      final user = await _authService.signUp(_email.trim(), _password);
+
+      if (user != null) {
+        final emailKey = _email.trim().toLowerCase();
+
+        // ✅ Save to profiles collection
+        await FirebaseFirestore.instance
+            .collection('profiles')
+            .doc(user.uid)
+            .set({
+          'email': emailKey,
+          'dateOfBirth': Timestamp.fromDate(_selectedDOB!),
+          'createdAt': FieldValue.serverTimestamp(),
+        });
+
+        // ✅ Save to recovery_lookup so forgot-password works
+        await FirebaseFirestore.instance
+            .collection('recovery_lookup')
+            .doc(emailKey)
+            .set({
+          'uid': user.uid,
+          'dob': Timestamp.fromDate(_selectedDOB!),
+        });
+
+        setState(() => _loading = false);
+
+        if (mounted) {
+          Navigator.pushReplacementNamed(context, '/home');
+        }
+      }
+    } catch (e) {
+      setState(() {
+        _loading = false;
+        _errorMessage = _getErrorMessage(e);
+      });
+    }
   }
 
   @override
@@ -110,8 +181,9 @@ class _SignupScreenState extends State<SignupScreen> {
                           ),
                         ),
                         keyboardType: TextInputType.emailAddress,
-                        validator: (val) =>
-                            val!.isEmpty ? 'Enter an email' : null,
+                        validator: (val) => val == null || val.isEmpty
+                            ? 'Enter an email'
+                            : null,
                         onChanged: (val) => setState(() => _email = val),
                       ),
                       const SizedBox(height: 15),
@@ -124,7 +196,6 @@ class _SignupScreenState extends State<SignupScreen> {
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          // ✅ FIX 1: Eye icon to toggle password visibility
                           suffixIcon: IconButton(
                             icon: Icon(
                               _obscurePassword
@@ -139,10 +210,54 @@ class _SignupScreenState extends State<SignupScreen> {
                             },
                           ),
                         ),
-                        obscureText: _obscurePassword, // ✅ Controlled by state
-                        validator: (val) =>
-                            val!.length < 6 ? 'Password too short' : null,
+                        obscureText: _obscurePassword,
+                        validator: (val) => val == null || val.length < 6
+                            ? 'Password too short'
+                            : null,
                         onChanged: (val) => setState(() => _password = val),
+                      ),
+                      const SizedBox(height: 15),
+
+                      // ── Date of Birth Picker ─────────────────────────────
+                      GestureDetector(
+                        onTap: _pickDOB,
+                        child: Container(
+                          width: double.infinity,
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 12, vertical: 14),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: _selectedDOB == null
+                                  ? Colors.grey
+                                  : Colors.deepPurple,
+                            ),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.calendar_today,
+                                color: _selectedDOB == null
+                                    ? Colors.grey
+                                    : Colors.deepPurple,
+                              ),
+                              const SizedBox(width: 12),
+                              Text(
+                                _selectedDOB == null
+                                    ? 'Select Date of Birth'
+                                    : '${_selectedDOB!.day.toString().padLeft(2, '0')} / '
+                                        '${_selectedDOB!.month.toString().padLeft(2, '0')} / '
+                                        '${_selectedDOB!.year}',
+                                style: TextStyle(
+                                  color: _selectedDOB == null
+                                      ? Colors.grey
+                                      : Colors.black87,
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
                       const SizedBox(height: 20),
 
@@ -153,14 +268,15 @@ class _SignupScreenState extends State<SignupScreen> {
                               width: double.infinity,
                               child: ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  padding: const EdgeInsets.symmetric(
-                                      vertical: 14),
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 14),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(12),
                                   ),
                                   backgroundColor: Colors.deepPurple,
                                   foregroundColor: Colors.white,
                                 ),
+                                onPressed: _handleSignUp,
                                 child: const Text(
                                   'Sign Up',
                                   style: TextStyle(
@@ -168,36 +284,11 @@ class _SignupScreenState extends State<SignupScreen> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                onPressed: () async {
-                                  if (_formKey.currentState!.validate()) {
-                                    setState(() {
-                                      _loading = true;
-                                      _errorMessage = ''; // Clear previous errors
-                                    });
-
-                                    try {
-                                      var user = await _authService.signUp(
-                                          _email, _password);
-                                      setState(() => _loading = false);
-
-                                      if (user != null && mounted) {
-                                        Navigator.pushReplacementNamed(
-                                            context, '/home');
-                                      }
-                                    } catch (e) {
-                                      // ✅ FIX 2: Show user-friendly error message
-                                      setState(() {
-                                        _loading = false;
-                                        _errorMessage = _getErrorMessage(e);
-                                      });
-                                    }
-                                  }
-                                },
                               ),
                             ),
                       const SizedBox(height: 10),
 
-                      // ✅ FIX 2: Show styled error message box (only when there's an error)
+                      // ── Error Message ────────────────────────────────────
                       if (_errorMessage.isNotEmpty)
                         Container(
                           width: double.infinity,

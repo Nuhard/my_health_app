@@ -11,10 +11,11 @@ import 'services/notification_service.dart';
 import 'screens/login_screen.dart';
 import 'screens/signup_screen.dart';
 import 'screens/home_screen.dart';
-import 'screens/doctor_login_screen.dart';        
+import 'screens/doctor_login_screen.dart';
 import 'screens/doctor_dashboard_screen.dart';
-import 'screens/admin_login_screen.dart';          // ← NEW
-import 'screens/admin_dashboard_screen.dart';      // ← NEW
+import 'screens/admin_login_screen.dart';
+import 'screens/admin_dashboard_screen.dart';
+import 'screens/forgot_password_screen.dart';
 // Providers
 import 'providers/auth_provider.dart';
 import 'providers/sync_provider.dart';
@@ -67,8 +68,9 @@ class MyApp extends StatelessWidget {
           '/home': (context) => HomeScreen(),
           '/doctor-login': (context) => DoctorLoginScreen(),
           '/doctor-dashboard': (context) => DoctorDashboardScreen(),
-          '/admin-login': (context) => const AdminLoginScreen(),        // ← NEW
-          '/admin-dashboard': (context) => const AdminDashboardScreen(), // ← NEW
+          '/admin-login': (context) => const AdminLoginScreen(),
+          '/admin-dashboard': (context) => const AdminDashboardScreen(),
+          '/forgot-password': (context) => const ForgotPasswordScreen(),
         },
       ),
     );

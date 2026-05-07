@@ -124,8 +124,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               width: double.infinity,
                               child: ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  padding: const EdgeInsets.symmetric(
-                                      vertical: 14),
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 14),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(12),
                                   ),
@@ -161,30 +161,40 @@ class _LoginScreenState extends State<LoginScreen> {
                                       if (e is FirebaseAuthException) {
                                         if (e.code == 'user-not-found') {
                                           // Older Firebase SDK
-                                          setState(() => _errorMessage = 'User not found');
+                                          setState(() =>
+                                              _errorMessage = 'User not found');
                                         } else if (e.code == 'wrong-password') {
                                           // Older Firebase SDK
-                                          setState(() => _errorMessage = 'Invalid credentials');
-                                        } else if (e.code == 'invalid-credential' ||
+                                          setState(() => _errorMessage =
+                                              'Invalid credentials');
+                                        } else if (e.code ==
+                                                'invalid-credential' ||
                                             e.code == 'invalid-email') {
                                           // Newer Firebase SDK merges both cases under
                                           // 'invalid-credential', so we check manually
                                           try {
-                                            final methods = await FirebaseAuth.instance
-                                                .fetchSignInMethodsForEmail(_email);
+                                            final methods = await FirebaseAuth
+                                                .instance
+                                                .fetchSignInMethodsForEmail(
+                                                    _email);
                                             if (methods.isEmpty) {
-                                              setState(() => _errorMessage = 'User not found');
+                                              setState(() => _errorMessage =
+                                                  'User not found');
                                             } else {
-                                              setState(() => _errorMessage = 'Invalid credentials');
+                                              setState(() => _errorMessage =
+                                                  'Invalid credentials');
                                             }
                                           } catch (_) {
-                                            setState(() => _errorMessage = 'Invalid credentials');
+                                            setState(() => _errorMessage =
+                                                'Invalid credentials');
                                           }
                                         } else {
-                                          setState(() => _errorMessage = 'Failed to login');
+                                          setState(() => _errorMessage =
+                                              'Failed to login');
                                         }
                                       } else {
-                                        setState(() => _errorMessage = 'Failed to login');
+                                        setState(() =>
+                                            _errorMessage = 'Failed to login');
                                       }
                                     }
                                   }
@@ -197,6 +207,15 @@ class _LoginScreenState extends State<LoginScreen> {
                           _errorMessage,
                           style: const TextStyle(color: Colors.red),
                         ),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/forgot-password');
+                        },
+                        child: const Text(
+                          'Forgot Password?',
+                          style: TextStyle(color: Colors.deepPurple),
+                        ),
+                      ),
                       TextButton(
                         onPressed: () {
                           Navigator.pushReplacementNamed(context, '/signup');
